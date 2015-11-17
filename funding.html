@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Disease BioPortal</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/custom2.css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Exo+2:400,900' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container" id="container-nav">
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index3.html"><big>Home</big></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="about.html">About</a></li>
+                <li><a href="javascript:void(0)" onclick = "
+
+                            document.getElementById('contact').style.display='block';
+                            document.getElementById('fade').style.display='block'
+
+                            ">Contact Us</a></li>
+                <li><a href="http://www.vetmed.ucdavis.edu/cadms/">Our Team</a></li>
+<!--                 <li><a href="funding.html">Funding</a></li> -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="javascript:void(0)" onclick = "
+
+                            document.getElementById('signup').style.display='block';
+                            document.getElementById('fade').style.display='block'
+
+                            ">Sign Up</a></li>
+              <li><a href="javascript:void(0)" onclick = "
+
+                            document.getElementById('login').style.display='block';
+                            document.getElementById('fade').style.display='block'
+
+                            ">Log In</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+      <div class="jumbotron" style = "text-align:center;font-size: 200%;"> 
+                    <h1>Partners and Collaborators</h1>
+                    <!-- <div class="centerTable"> -->
+                    <div>
+                    <table border="5px solid black;" class="centerTable">
+                      <tr><td><img src="fundingpics/Picture1.png" class="fundPic" alt="USDA"></td>
+                      <td><a href="http://www.usda.gov">U.S Department of Agriculture</a></td></tr>
+                      <tr><td><img src="fundingpics/Picture2.png" class="fundPic" alt="IOWA"></td>
+                      <td><a href="https://www.iastate.edu">Iowa State University</a></td></tr>
+                      <tr><td><img src="fundingpics/Picture3.png" class="fundPic" alt="OIE"></td>
+                      <td><a href="http://www.oie.int">World Organization for Animal Health</a></td></tr>
+                      <tr><td><img src="fundingpics/Picture4.png" class="fundPic" alt="FAO"></td>
+                      <td><a href="http://www.fao.org">Food and Agriculture Organization of the United Nations</a></td></tr>
+                      <tr><td><img src="fundingpics/Picture5.png" class="fundPic" alt="VISAVET"></td>
+                      <td><a href="https://www.visavet.es">VISAVET Health Surveillance Centre - Universidad Complutense Madrid</a></td></tr>
+                      <tr><td><img src="fundingpics/Picture6.png" class="fundPic" alt="BOEHRINGER"></td>
+                      <td><a href="https://www.boehringer-ingelheim.com">Boehringer Ingelheim</a></td></tr>
+                      <tr><td><img src="fundingpics/Picture7.png" class="fundPic" alt="CDFA"></td>
+                      <td><a href="http://www.cdfa.ca.gov">California Department of Food and Agriculture</a></td></tr>
+                      <tr><td><img src="fundingpics/Picture8.png" class="fundPic" alt="AHVLA"></td>
+                      <td><a href="https://www.gov.uk/government/organisations/animal-health-and-veterinary-laboratories-agency">Animal Health and Veterinary Laboratories Agency</a></td></tr>
+                      <tr><td><img src="fundingpics/Picture9.png" class="fundPic" alt="PIRBRIGHT"></td>
+                      <td><a href="http://www.pirbright.ac.uk">The Pirbright Institute</a></td></tr>
+                      <tr><td><img src="fundingpics/Picture10.png" class="fundPic" alt="UCDVM"></td>
+                      <td><a href="http://www.vetmed.ucdavis.edu/index.cfm">University of California, Davis College of Veterinary Medicine</a></td></tr>
+                      <tr><td><img src="fundingpics/Picture11.png" class="fundPic" alt="UM"></td>
+                      <td><a href="https://twin-cities.umn.edu/">University of Minnesota</a></td></tr>
+                      <tr><td><img src="fundingpics/Picture12.png" class="fundPic" alt="UCMEXUS"></td>
+                      <td><a href="ucmexus.ucr.edu/">University of California Institute for Mexico and the United States</a></td></tr>
+                      <tr><td><img src="fundingpics/Picture13.png" class="fundPic" alt="IZSAM"></td>
+                      <td><a href="www.izs.it/">Izsam Teramo, G.Caporale</a></td></tr>
+                      <tr><td><img src="fundingpics/Picture14.png" class="fundPic" alt="GFRA"></td>
+                      <td><a href="http://www.ars.usda.gov/gfra/">Global Foot-and-Mouth Disease Research Alliance</a></td></tr>
+                      <tr><td><img src="fundingpics/Picture15.png" class="fundPic" alt="GARA"></td>
+                      <td><a href="http://www.ars.usda.gov/gara/">Global African Swine Fever Research Alliance</a></td></tr>
+                      <tr><td><img src="fundingpics/Picture16.png" class="fundPic" alt="UCDD"></td>
+                      <td><a href="http://www.usda.gov">University College Dublin, Ireland's Global University</a></td></td></tr>
+                      <tr><td><img src="fundingpics/Picture17.png" class="fundPic" alt="ASFORCE"></td>
+                      <td><a href="asforce.org/">ASForce - Targeted Research Effort on African Swine Fever</a></td></tr>
+                      <tr><td><img src="fundingpics/Picture18.png" class="fundPic" alt="VETERINAE"></td>
+                      <td><a href="www.vetinst.no/eng/Norwegian-Veterinary-Institute">Veterinaerinstituttet - Norwegian Veterinary Institute</a></td></tr>
+                      <tr><td><img src="fundingpics/Picture19.png" class="fundPic" alt="LIBERTAS"></td>
+                      <td><a href="https://www.uach.cl/">Universidad Austral de Chile</a></td></tr>
+                    </table>
+                  </div>
+      </div>
+      <div id="contact" class="white_content" style="height: 550px;">
+        <a class="close" style="text-align:right;" href="javascript:void(0)" onclick = "
+
+            document.getElementById('contact').style.display='none';
+            document.getElementById('fade').style.display='none'
+
+        ">×</a>
+        <div class="container-popup">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <form class="form-horizontal" method="post" style="background:white;">
+                            <fieldset style="background:white;">
+                                <legend class="text-center header" style="padding-left:50px;">Contact us</legend>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <textarea class="form-control" id="message" name="message" placeholder="Enter your message for us here" rows="7"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id="contact" class="white_content" style="height:600px;">
+        <a class="close" style="text-align:right;" href="javascript:void(0)" onclick = "
+
+            document.getElementById('contact').style.display='none';
+            document.getElementById('fade').style.display='none'
+
+            ">×</a>
+        <div class="container-popup">
+            <form class="form-horizontal" role="form" style="align: left;">
+                <h2 style="text-align:left; padding-left: 0px; left:0px;">Contact</h2>
+                <p>We welcome your feedback and questions<p>
+                <div class="form-group">
+                    <div class="dropdown">
+                        <button id="contactButton" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                            Category
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" id="op1">Science Question</a></li>
+                            <li><a href="#" id="op2">Technical Question</a></li>
+                            <li><a href="#" id="op3">Report A Problem</a></li>
+                            <li><a href="#" id="op4">Contact PI</a></li>
+                            <li><a href="#" id="op5">Web Training</a></li>
+                            <li><a href="#" id="op6">Other</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Subject</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="cSubject" placeholder="Required" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">Email</label>
+                    <div class="col-sm-9">
+                        <input type="email" id="cEmail" placeholder="Required" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="message" name="message" placeholder="Enter your message for us here" rows="7"></textarea>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <a href="javascript:void(0)" onclick = "
+
+                        document.getElementById('contact').style.display='none';
+                        document.getElementById('fade').style.display='none'
+
+                        " class="btn btn-primary btn-block" role="button">Send</a>
+                    </div>
+                </div>
+            </form> <!-- /form -->
+        </div> <!-- ./container -->
+    </div>
+      <div id="signup" class="white_content">
+        <a class="close" style="text-align:right;" href="javascript:void(0)" onclick = "
+
+            document.getElementById('signup').style.display='none';
+            document.getElementById('fade').style.display='none'
+
+            ">×</a>
+        <div class="container-popup">
+            <form class="form-horizontal" role="form">
+                <h2 style = "align:center;">Registration Form</h2>
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Email</label>
+                    <div class="col-sm-9">
+                        <input type="email" id="email" placeholder="Required" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">Password</label>
+                    <div class="col-sm-9">
+                        <input type="password" id="password" placeholder="Required" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Cpassword" class="col-sm-3 control-label">Confirm Password</label>
+                    <div class="col-sm-9">
+                        <input type="password" id="Cpassword" placeholder="Required" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="fname" class="col-sm-3 control-label">First Name</label>
+                    <div class="col-sm-9">
+                        <input type="fname" id="fname" class="form-control" placeholder="Required">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lname" class="col-sm-3 control-label">Last Name</label>
+                    <div class="col-sm-9">
+                        <input type="lname" id="lname" class="form-control" placeholder="Required">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="country" class="col-sm-3 control-label">Country</label>
+                    <div class="col-sm-9">
+                        <select id="country" class="form-control">
+                            <option value="1">Afghanistan</option>
+                            <option value="3">Albania</option>
+                            <option value="4">Algeria</option>
+                            <option value="5">American Samoa</option>
+                            <option value="6">Andorra</option>
+                            <option value="7">Angola</option>
+                            <option value="8">Anguilla</option>
+                            <option value="9">Antarctica</option>
+                            <option value="10">Antigua and Barbuda</option>
+                            <option value="11">Argentina</option>
+                            <option value="12">Armenia</option>
+                            <option value="13">Aruba</option>
+                            <option value="16">Australia</option>
+                            <option value="17">Austria</option>
+                            <option value="18">Azerbaijan</option>
+                            <option value="19">Bahamas</option>
+                            <option value="20">Bahrain</option>
+                            <option value="22">Bangladesh</option>
+                            <option value="23">Barbados</option>
+                            <option value="25">Belarus</option>
+                            <option value="26">Belgium</option>
+                            <option value="27">Belize</option>
+                            <option value="28">Benin</option>
+                            <option value="29">Bermuda</option>
+                            <option value="30">Bhutan</option>
+                            <option value="32">Bolivia</option>
+                            <option value="33">Bosnia and Herzegovina</option>
+                            <option value="34">Botswana</option>
+                            <option value="35">Bouvet Island</option>
+                            <option value="36">Brazil</option>
+                            <option value="37">British Indian Ocean Territory</option>
+                            <option value="39">Brunei Darussalam</option>
+                            <option value="40">Bulgaria</option>
+                            <option value="41">Burkina Faso</option>
+                            <option value="42">Burundi</option>
+                            <option value="43">Cambodia</option>
+                            <option value="44">Cameroon</option>
+                            <option value="45">Canada</option>
+                            <option value="46">Cape Verde</option>
+                            <option value="47">Cayman Islands</option>
+                            <option value="49">Central African Republic</option>
+                            <option value="50">Chad</option>
+                            <option value="51">Chile</option>
+                            <option value="52">China</option>
+                            <option value="54">Christmas Island</option>
+                            <option value="56">Cocos (Keeling) Islands</option>
+                            <option value="57">Colombia</option>
+                            <option value="58">Comoros</option>
+                            <option value="59">Congo</option>
+                            <option value="67">Congo, Democratic Republic of the </option>
+                            <option value="60">Cook Islands</option>
+                            <option value="61">Costa Rica</option>
+                            <option value="48">Côte d'Ivoire</option>
+                            <option value="62">Croatia</option>
+                            <option value="63">Cuba</option>
+                            <option value="64">Cyprus</option>
+                            <option value="65">Czech Republic</option>
+                            <option value="68">Denmark</option>
+                            <option value="70">Djibouti</option>
+                            <option value="71">Dominica</option>
+                            <option value="72">Dominican Republic</option>
+                            <option value="73">Ecuador</option>
+                            <option value="74">Egypt</option>
+                            <option value="75">El Salvador</option>
+                            <option value="76">Equatorial Guinea</option>
+                            <option value="77">Eritrea</option>
+                            <option value="78">Estonia</option>
+                            <option value="79">Ethiopia</option>
+                            <option value="81">Falkland Islands (Malvinas)</option>
+                            <option value="82">Faroe Islands</option>
+                            <option value="83">Fiji</option>
+                            <option value="84">Finland</option>
+                            <option value="85">France</option>
+                            <option value="86">French Guiana</option>
+                            <option value="87">French Polynesia</option>
+                            <option value="88">French Southern and Antarctic Territories</option>
+                            <option value="89">Gabon</option>
+                            <option value="90">Gambia</option>
+                            <option value="92">Georgia</option>
+                            <option value="93">Germany</option>
+                            <option value="94">Ghana</option>
+                            <option value="95">Gibraltar</option>
+                            <option value="97">Greece</option>
+                            <option value="98">Greenland</option>
+                            <option value="99">Grenada</option>
+                            <option value="100">Guadeloupe</option>
+                            <option value="101">Guam</option>
+                            <option value="102">Guatemala</option>
+                            <option value="104">Guinea</option>
+                            <option value="105">Guinea-Bissau</option>
+                            <option value="106">Guyana</option>
+                            <option value="107">Haiti</option>
+                            <option value="109">Heard Island and McDonald Islands</option>
+                            <option value="111">Honduras</option>
+                            <option value="112">Hong Kong</option>
+                            <option value="114">Hungary</option>
+                            <option value="115">Iceland</option>
+                            <option value="117">India</option>
+                            <option value="118">Indonesia</option>
+                            <option value="119">Iran (Islamic Republic of)</option>
+                            <option value="120">Iraq</option>
+                            <option value="121">Ireland</option>
+                            <option value="123">Israel</option>
+                            <option value="124">Italy</option>
+                            <option value="125">Jamaica</option>
+                            <option value="127">Japan</option>
+                            <option value="131">Jordan</option>
+                            <option value="133">Kazakhstan</option>
+                            <option value="134">Kenya</option>
+                            <option value="136">Kiribati</option>
+                            <option value="66">Korea, Democratic People's Republic of (North)</option>
+                            <option value="207">Korea, Republic of (South)</option>
+                            <option value="138">Kuwait</option>
+                            <option value="139">Kyrgyzstan</option>
+                            <option value="140">Lao People's Democratic Republic</option>
+                            <option value="141">Latvia</option>
+                            <option value="142">Lebanon</option>
+                            <option value="143">Lesotho</option>
+                            <option value="145">Liberia</option>
+                            <option value="146">Libyan Arab Jamahiriya</option>
+                            <option value="147">Liechtenstein</option>
+                            <option value="148">Lithuania</option>
+                            <option value="149">Luxembourg</option>
+                            <option value="151">Macau</option>
+                            <option value="245">Macedonia, The former Yugoslav Republic of</option>
+                            <option value="152">Madagascar</option>
+                            <option value="154">Malawi</option>
+                            <option value="155">Malaysia</option>
+                            <option value="156">Maldives</option>
+                            <option value="157">Mali</option>
+                            <option value="158">Malta</option>
+                            <option value="159">Marshall Islands</option>
+                            <option value="160">Martinique</option>
+                            <option value="161">Mauritania</option>
+                            <option value="162">Mauritius</option>
+                            <option value="163">Mayotte</option>
+                            <option value="164">Mexico</option>
+                            <option value="165">Micronesia (Federated States of)</option>
+                            <option value="167">Moldova, Republic of</option>
+                            <option value="168">Monaco</option>
+                            <option value="169">Mongolia</option>
+                            <option value="170">Montenegro</option>
+                            <option value="171">Montserrat</option>
+                            <option value="172">Morocco</option>
+                            <option value="173">Mozambique</option>
+                            <option value="174">Myanmar</option>
+                            <option value="175">Namibia</option>
+                            <option value="176">Nauru</option>
+                            <option value="178">Nepal</option>
+                            <option value="179">Netherlands</option>
+                            <option value="180">Netherlands Antilles</option>
+                            <option value="181">New Caledonia</option>
+                            <option value="182">New Zealand</option>
+                            <option value="183">Nicaragua</option>
+                            <option value="184">Niger</option>
+                            <option value="185">Nigeria</option>
+                            <option value="186">Niue</option>
+                            <option value="187">Norfolk Island</option>
+                            <option value="188">Northern Mariana Islands</option>
+                            <option value="189">Norway</option>
+                            <option value="191">Oman</option>
+                            <option value="192">Pakistan</option>
+                            <option value="193">Palau</option>
+                            <option value="195">Panama</option>
+                            <option value="196">Papua New Guinea</option>
+                            <option value="198">Paraguay</option>
+                            <option value="199">Peru</option>
+                            <option value="200">Philippines</option>
+                            <option value="201">Pitcairn</option>
+                            <option value="202">Poland</option>
+                            <option value="203">Portugal</option>
+                            <option value="204">Puerto Rico</option>
+                            <option value="205">Qatar</option>
+                            <option value="206">Réunion</option>
+                            <option value="209">Romania</option>
+                            <option value="210">Russian Federation</option>
+                            <option value="211">Rwanda</option>
+                            <option value="213">Saint Kitts and Nevis</option>
+                            <option value="214">Saint Lucia</option>
+                            <option value="216">Saint Vincent and the Grenadines</option>
+                            <option value="217">Samoa</option>
+                            <option value="218">San Marino</option>
+                            <option value="219">Sao Tome and Principe</option>
+                            <option value="220">Saudi Arabia</option>
+                            <option value="222">Senegal</option>
+                            <option value="208">Serbia, Republic of </option>
+                            <option value="224">Seychelles</option>
+                            <option value="225">Sierra Leone</option>
+                            <option value="226">Singapore</option>
+                            <option value="227">Slovakia</option>
+                            <option value="228">Slovenia</option>
+                            <option value="229">Solomon Islands</option>
+                            <option value="230">Somalia</option>
+                            <option value="231">South Africa</option>
+                            <option value="232">South Georgia and the South Sandwich Islands</option>
+                            <option value="233">Spain</option>
+                            <option value="235">Sri Lanka</option>
+                            <option value="236">Sudan</option>
+                            <option value="237">Suriname</option>
+                            <option value="238">Svalbard and Jan Mayen Islands</option>
+                            <option value="239">Swaziland</option>
+                            <option value="240">Sweden</option>
+                            <option value="241">Switzerland</option>
+                            <option value="242">Syrian Arab Republic</option>
+                            <option value="277">Taiwan, Republic of China</option>
+                            <option value="243">Tajikistan</option>
+                            <option value="276">Tanzania, United Republic of</option>
+                            <option value="244">Thailand</option>
+                            <option value="247">Togo</option>
+                            <option value="248">Tokelau</option>
+                            <option value="249">Tonga</option>
+                            <option value="250">Trinidad and Tobago</option>
+                            <option value="252">Tunisia</option>
+                            <option value="253">Turkey</option>
+                            <option value="254">Turkmenistan</option>
+                            <option value="255">Turks and Caicos islands</option>
+                            <option value="256">Tuvalu</option>
+                            <option value="257">U.K. of Great Britain and Northern Ireland</option>
+                            <option value="258">Uganda</option>
+                            <option value="259">Ukraine</option>
+                            <option value="260">United Arab Emirates</option>
+                            <option value="261">United Republic of Tanzania</option>
+                            <option value="262">United States of America</option>
+                            <option value="264">Uruguay</option>
+                            <option value="265">Uzbekistan</option>
+                            <option value="266">Vanuatu</option>
+                            <option value="267">Venezuela</option>
+                            <option value="268">Viet Nam</option>
+                            <option value="270">Wallis and Futuna</option>
+                            <option value="272">Western Sahara</option>
+                            <option value="273">Yemen</option>
+                            <option value="274">Zambia</option>
+                            <option value="275">Zimbabwe</option></select>
+                        </select>
+                    </div>
+                </div> <!-- /.form-group -->
+                <div class="form-group">
+                    <label for="institution" class="col-sm-3 control-label">Institution</label>
+                    <div class="col-sm-9">
+                        <input type="institution" id="institution" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="position" class="col-sm-3 control-label">Position</label>
+                    <div class="col-sm-9">
+                        <input type="position" id="position" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phonenumber" class="col-sm-3 control-label">Phone Number</label>
+                    <div class="col-sm-9">
+                        <input type="phonenumber" id="phonenumber" class="form-control">
+                    </div>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> I have read and agree to the 
+                        <a id="terms" href="javascript:void(0)" onclick = "
+
+                            document.getElementById('term').style.display='block';
+                            document.getElementById('signup').style.display='none';
+                            "> Terms of Use</a>
+                    </label>
+                </div>
+            </br>
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <a href="javascript:void(0)" onclick = "
+
+                        document.getElementById('signup').style.display='none';
+                        document.getElementById('fade').style.display='none'
+
+                        " class="btn btn-primary btn-block" role="button">Sign Up</a>
+                    </div>
+                </div>
+            </form> <!-- /form -->
+        </div> <!-- ./container -->
+  </div>
+
+    <div id="term" class="white_content">
+        <a class="close" style="text-align:right;" href="javascript:void(0)" onclick = "
+
+            document.getElementById('term').style.display='none';
+            document.getElementById('fade').style.display='none'
+
+            ">×</a>
+        <h2><big><b>Terms and Conditions for Use of Website</b></big><h2>
+
+        <p>By clicking the "I have read and agree to the terms of use” button appearing at the bottom of this agreement and using the Website that follows ("Website"), you expressly agree and consent to be bound by all the terms and conditions of this agreement ("Agreement") which is published at (link) and which are incorporated herein by reference. If you do not agree to any of these terms, please do not use the Website.</p>
+
+        <p>This Website and related materials including, without limitation, text, images, graphics, audio, music, video, software, copyrights, trademarks and service marks, ("Content") are or may be protected under United States and worldwide copyrights or other Intellectual Property Rights which are owned or licensed, in whole or in part, by The Regents of the University of California, Davis campus (“The Regents.”)</p>
+
+        <p>For the purposes of this Agreement, "Intellectual Property Rights" means all copyrights, patent rights, mask work rights, moral rights, rights of publicity, trademark, trade dress and service mark rights, goodwill, trade secret rights and other intellectual property rights as may now exist or later come into existence, and all applications, registrations, renewals and extensions, under the laws of any state, country, territory or other jurisdiction, relating to the Website or any Content. </p>
+
+        <p>Subject to the terms and conditions of this Agreement and provided you have paid all amounts owed to The Regents, you are hereby granted a non-exclusive, limited, personal license to use the Website.  The Regents may terminate this license at any time for any reason or no reason, subject to a refund of any amount you have paid to The Regents during the thirty (30) days prior to such termination.   If you download or print a copy of the Content, you must retain all copyright and other proprietary notices on it.</p>
+
+        <p>The Content may not be reproduced, distributed, transmitted, transferred, republished, sold, manipulated, edited, performed, posted or otherwise distributed or exploited in any manner whatsoever without The Regents’ prior written consent, which may be withheld in its sole discretion.  Any use of any portion of this Website on any other website or other networked computer environment is prohibited without The Regents’ prior written consent, which may be withheld in its sole discretion.  Any unauthorized manipulation of this Content constitutes an infringement of The Regents’ Intellectual Property Rights, or of the Intellectual Property Rights of the respective owners of the Content.</p>
+
+        <p>You agree to defend, indemnify and hold harmless The Regents, its officers, agents and employees, harmless from and against any and all liability, loss, expense, attorneys' fees, or claims for injury or damages arising from: (i) your use of and access to the Website, including any data or work transmitted or received by you; (ii) your violation of any term of this Agreement; (iii) your violation of any third party right, including without limitation any right of privacy, publicity rights or Intellectual Property Rights; (iv) your violation of any law, rule or regulation of the United States or any other country; (v) any other party’s access and use of the Website with your unique username, password or other appropriate security code. </p>
+
+        <p>THE WEBSITE AND CONTENT ARE PROVIDED WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. WITHOUT LIMITING THE FOREGOING, THE REGENTS DOES NOT WARRANT THAT THE CONTENT IS ACCURATE, RELIABLE OR CORRECT; THAT THE WEBSITE OR THE SERVICE WILL MEET YOUR REQUIREMENTS; THAT THE WEBSITE OR THE SERVICE WILL BE AVAILABLE AT ANY PARTICULAR TIME OR LOCATION, UNINTERRUPTED OR SECURE; THAT ANY DEFECTS OR ERRORS WILL BE CORRECTED; OR THAT THE MATERIALS ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. ANY MATERIALS DOWNLOADED OR OTHERWISE OBTAINED THROUGH THE USE OF THE WEBSITE ARE DOWNLOADED AT YOUR OWN RISK AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM SUCH DOWNLOAD.</p>
+
+        <p>NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU THROUGH THE WEBSITE SHALL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THIS AGREEMENT.</p> 
+
+        <p>In any event, your sole and exclusive remedy for any liability relating to or arising out of the website or this agreement, regardless of the form in which any legal or equitable action may be brought, shall be for you to discontinue your use of the service and terminate this agreement and to receive a refund up to the amount you paid to the regents during the thirty (30) days prior to such termination.</p> 
+
+        <p>You agree that the Website shall be deemed solely based in California. This Agreement shall be governed by the laws of the State of California, without respect to its conflict of laws principles. Any claim or dispute between you and The Regents that arises in whole or in part from the Website shall be decided exclusively by a court of competent jurisdiction located in San Francisco, California.</p>
+
+        <p>This Agreement and any other legal notices published by The Regents on the Website, shall constitute the entire agreement between you and The Regents concerning the Website.</p>
+
+        <p>If any provision of this Agreement is deemed invalid by a court of competent jurisdiction, the invalidity of such provision shall not affect the validity of the remaining provisions of this Agreement, which shall remain in full force and effect. No waiver of any term of this Agreement shall be deemed a further or continuing waiver of such term or any other term, and The Regents failure to assert any right or provision under this Agreement shall not constitute a waiver of such right or provision. The Regents reserves the right to amend this Agreement at any time and without notice, and it is your responsibility to review the Agreement for any changes. Your use of the Website following any amendment of this Agreement will signify your assent to and acceptance of its revised terms.</p>
+
+        <p>Access to the Website indicates your legal acceptance of these terms and conditions.</p>
+        <div>
+            <a href="javascript:void(0)" onclick = "
+
+                        document.getElementById('signup').style.display='block';
+                        document.getElementById('term').style.display='none'
+
+            " class="btn btn-primary btn-block" role="button">Back to Sign Up</a>
+        </div>
+    </div>
+
+  <div id="login" class="white_content" style="height:350px;">
+        <a class="close" style="text-align:right;" href="javascript:void(0)" onclick = "
+
+            document.getElementById('login').style.display='none';
+            document.getElementById('fade').style.display='none'
+
+            ">×</a>
+        <div class="container-popup">
+            <form class="form-horizontal" role="form">
+                <h2 style = "text-align:center;">Log In</h2>
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Username</label>
+                    <div class="col-sm-9">
+                        <input type="email" id="email" placeholder="Required" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">Password</label>
+                    <div class="col-sm-9">
+                        <input type="password" id="password" placeholder="Required" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <a href="javascript:void(0)" onclick = "
+
+                        document.getElementById('login').style.display='none';
+                        document.getElementById('fade').style.display='none'
+
+                        " class="btn btn-primary btn-block" role="button">Log In</a>
+                    </div>
+                </div>
+            </form> <!-- /form -->
+        </div> <!-- ./container -->
+    </div>
+  <div id="fade" class="black_overlay"></div>
+
+  </div>
+
+<!--       <div class="jumbotron" id="no-padding" style="position:absolute; left: 0px; width: 50%; top:200px;">
+
+            <img src="fundingpics/Picture1.png" class="fundPic" alt="USDA"><br/>
+            <img src="fundingpics/Picture2.png" class="fundPic" alt="IOWA"><br/>
+            <img src="fundingpics/Picture3.png" class="fundPic" alt="OIE" ><br/>
+            <img src="fundingpics/Picture4.png" class="fundPic" alt="FAO" ><br/>
+            <img src="fundingpics/Picture5.png" class="fundPic" alt="VISAVET"><br/>
+            <img src="fundingpics/Picture6.png" class="fundPic" alt="BOEHRINGER" ><br/>
+            <img src="fundingpics/Picture7.png" class="fundPic" alt="CDFA"><br/>
+            <img src="fundingpics/Picture8.png" class="fundPic" alt="AHVLA" ><br/>
+            <img src="fundingpics/Picture9.png" class="fundPic" alt="PIRBRIGHT" ><br/>
+            <img src="fundingpics/Picture10.png" class="fundPic" alt="UCDVM" ><br/>
+            <img src="fundingpics/Picture11.png" class="fundPic" alt="UM" ><br/>
+            <img src="fundingpics/Picture12.png" class="fundPic" alt="UCMEXUS" ><br/>
+            <img src="fundingpics/Picture13.png" class="fundPic" alt="IZSAM" ><br/>
+            <img src="fundingpics/Picture14.png" class="fundPic" alt="GFRA" ><br/>
+            <img src="fundingpics/Picture15.png" class="fundPic" alt="GARA" ><br/>
+            <img src="fundingpics/Picture16.png" class="fundPic" alt="UCDD" ><br/>
+            <img src="fundingpics/Picture17.png" class="fundPic" alt="ASFORCE" ><br/>
+            <img src="fundingpics/Picture18.png" class="fundPic" alt="VETERINAE" ><br/>
+            <img src="fundingpics/Picture19.png" class="fundPic" alt="LIBERTAS" ><br/>
+    </div> 
+    <div class="jumbotron" id="no-padding" style="position:absolute; right:0px; width: 50%; top:200px;">
+      <ul class="fundinglinks">
+        <li class="fli"><a href="http://www.usda.gov" style="padding-left: 25%; padding-top: 50px;">http://www.usda.gov</a>
+        </li>
+        <li class="fli"><a href="http://www.usda.gov" style="padding-left: 25%; padding-top: 50px;">https://www.iastate.edu</a></li>
+        <li class ="fli"><a href="http://www.usda.gov" style="padding-left: 25%;">http://www.oie.int</a></li>
+        <li class="fli"><a href="http://www.usda.gov" style="padding-left: 25%;">http://www.fao.org</a></li>
+        <li class="fli"><a href="http://www.usda.gov" style="padding-left: 25%;">https://www.visavet.es</a></li>
+        <li class="fli"><a href="http://www.usda.gov" style="padding-left: 25%;">https://www.boehringer-ingelheim.com</a></li>
+        <li class="fli"><a href="http://www.usda.gov" style="padding-left: 25%;">http://www.cdfa.ca.gov</a></li>
+        <li class="fli"><a href="http://www.usda.gov" style="padding-left: 25%;">https://www.gov.uk/government/organisations/animal-and-plant-health-agency </a></li>
+        <li class="fli"><a href="http://www.usda.gov" style="padding-left: 25%;">http://www.pirbright.ac.uk</a></li>
+        <li class="fli"><a href="http://www.usda.gov" style="padding-left: 25%;">https://twin-cities.umn.edu</a></li>
+        <li class="fli"><a href="http://www.usda.gov" style="padding-left: 25%;">http://www.ars.usda.gov/gfra/</a></li>
+        <li class="fli"><a href="http://www.usda.gov" style="padding-left: 25%;">http://www.ucd.ie</a></li>
+        <li class="fli"><a href="http://www.usda.gov" style="padding-left: 25%;">http://www.vetinst.no/eng/ </a></li>
+      </ul> -->
+
+<!--     </div>
+</div> -->
+
+
+     <!-- Not displaying properly -->
+<!--     <div id="footer">
+      <div class="container" id="footer-container">
+        <p class="muted credit">Copyright © The Regents of the University of California, Davis campus, All Rights Reserved</p>
+      </div>
+    </div> -->
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>

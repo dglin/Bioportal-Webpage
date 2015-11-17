@@ -1,0 +1,45 @@
+.other-color {
+	background: #0B3861
+}
+
+.log-in {
+	display: inline-block;
+	position: relative;
+	left: 40%;
+	margin-bottom: 20px;
+}
+
+#circle {
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 100px; 
+    background-color: blue;
+    text-align: center;
+    margin-left: 15%;
+	margin-right: 15%
+	position: relative;
+	display: inline-block;
+}
+
+#circleRow {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#login {
+
+}	
+
+#top-banner {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}	
+
+#top-banner-text {
+	display: inline-block;
+	position: relative;
+	left: 15%;
+}

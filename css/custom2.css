@@ -1,0 +1,443 @@
+.navbar {
+	background-color: #336666;
+	background: #336666;
+	background:rgba(255,255,255,0.75);
+	border-color: transparent;
+}
+
+
+.black_overlay{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    min-height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.70;
+    filter: alpha(opacity=65);
+}
+
+.container-popup {
+    width: 525px;
+    /*padding-top:50px;*/
+}
+
+.white_content {
+    display: none;
+    position: absolute;
+
+    top:300px;
+    height: 700px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    width: 600px;
+    padding: 16px;
+    border-radius: 16px;
+    border: solid grey;
+    background-color: white;
+    z-index:1002;
+    overflow: none;
+}
+
+#transparentBorder {
+    padding-left: 10px;
+    padding-right: 10px;
+    background:rgba(255,255,255,0.25);
+    border-radius: 10px;
+}
+
+
+body {
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+*[role="form"] {
+    background-color: #FFFFFF;
+    max-width: 530px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 0.3em;
+}
+
+/**[role="form"] h2 {
+    margin-left: 5em;
+    margin-bottom: 1em;
+}*/
+
+.navbar-brand {
+	font-size: 36px;
+	color: #FFFFFF;
+}
+.navbar li { color: #000 }
+
+
+.navbar-brand {
+	font-family: 'Exo 2', sans-serif;
+}
+
+.right-side-button {
+	float: right;
+}
+
+#no-padding {
+    background: white;
+	/*position: absolute;*/
+	width:100%;
+    height:100%;
+	top: 0px;
+	padding: 0;
+ }
+ 
+.item img {
+	width: 100%;
+}
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+.btn-primary.raised {
+    box-shadow: 0 3px 0 0 #007299;
+}
+
+.btn-primary.raised:active, .btn-primary.raised.active {
+    background: #33a6cc;
+    box-shadow: none;
+    margin-bottom: -3px;
+    margin-top: 3px;
+}
+
+#center-text {
+    background: #FFFFFF;
+	position: absolute;
+	top: 580px;
+	width:100%;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.info {
+    background: #FFFFFF;
+    position: absolute;
+    top: 1000px;
+    background-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.circle {
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 100px; 
+    background-color: #151B54;
+	text-align: center;
+	color: #FEFCFF;
+	position: relative;
+	display: inline-block;
+}
+
+#fileimg {
+	background-image: url(../file.png);
+	background-size: 200px 200px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#arrowimg {
+	background-image: url(../arrow.png);
+	background-size: 160px 160px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#floppyimg {
+	background-image: url(../floppy-disk.png);
+	background-size: 150px 150px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.carousel-inner{
+  width:100%;
+  max-height: 550px !important;
+}
+
+
+.overlay { 
+  font-size: large;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  position:absolute;
+  z-index:12;
+  top:5%;
+  margin-left: 75px;
+  /*margin-right: 75px;*/
+  width:80%;
+  text-align:left;
+}
+
+.footer, .push {
+	height: 4em;
+}
+
+#contact {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.signup {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.loginsignup-content {
+    width: 100%;
+    height: 300px;
+    background: red;
+    color: #fff;
+}
+
+/*@media screen and (min-width: 768px) { 
+    .carousel-caption {
+        text-align: left;
+        padding-right: 300px;
+    }
+    .loginsignup {
+        width: 750px;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        padding: 20px 0;
+        margin-left: -375px;
+    }
+    .loginsignup-content {
+        width: 300px;
+        float: right;
+        height: 55%;
+        background: red;
+        color: #fff;
+        margin-right:15px; /* width of .container gutter */
+    /*}
+
+}
+@media (min-width: 992px) { 
+    .loginsignup {
+        width: 970px;
+        margin-left: -485px;
+    }
+}
+@media (min-width: 1200px) { 
+    .loginsignup {
+        width: 1170px;
+        margin-left: -585px;
+    }
+}*/
+
+@media screen and (max-width: 1235px) {
+    .overlay{
+        font-size: 10px;
+        height: 450px;
+        overflow: scroll;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    .overlay{
+        font-size: 10px;
+        height: 400px;
+        overflow: scroll;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .overlay{
+        font-size: 10px;
+        height: 350px;
+        overflow: scroll;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .overlay{
+        font-size: 10px;
+        height: 300px;
+        overflow: scroll;
+    }
+
+}
+
+
+@media screen and (max-width: 769px) {
+    .center-text {
+        top: 400px;
+    }
+    .overlay{
+        font-size: 10px;
+        height: 250px;
+        overflow: scroll;
+    }
+    #login{
+        overflow:scroll;
+    }
+    #signup{
+        overflow:scroll;
+    }
+    #contact{
+        overflow:scroll;
+    }
+/*    h2{
+        font-size: 20px
+    }*/
+
+}
+
+@media screen and (max-width: 500px) {
+    .overlay{
+        font-size: 10px;
+        height: 200px;
+        overflow: scroll;
+    }
+}
+
+
+
+.stretch {
+    width: 100%;
+    height: 350px;
+}
+
+
+.background{
+    width: 100%; 
+    top: 1000px; 
+    position: absolute; 
+    left: 0px; 
+    z-index: 0;
+}
+
+/*#default {
+    background: #FFFFFF;
+    position: absolute;
+    top: 1000px;
+    width:100%;
+    height:450px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}*/
+
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+#wrap {
+    min-height: 200px;
+/*    height: auto !important;
+    height: 100%;*/
+    /* Negative indent footer by it's height */
+    /*margin: 0 auto -60px;*/
+}
+
+#footer {
+    background-color: #f5f5f5;
+    position: auto;
+    bottom: 0;
+    padding:0 20px;
+    width: 100%;
+    height: auto;
+}
+
+#footer-container{
+    width: 800px;
+    text-align: center;
+}
+
+#wrap > .container {
+    padding-top: 60px;
+}
+.container .credit {
+    margin: 20px 0;
+}
+
+
+code {
+    font-size: 80%;
+}
+
+#container-nav{
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 0 ! important;
+    width:100%;
+}
+#container-nav2{
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 0 ! important;
+    width:100%;
+}
+
+/*.fundPic {
+    padding-left: 50%;
+    /*padding-right: 50%;*/
+/*}
+*/
+/*.fundinglinks {
+    list-style-type:none;
+      margin: 1em 0;
+      padding: 0 0 0 40px;
+}*/
+
+.fli + .fli {
+  margin-top: 1em;
+}
+
+.centerTable{
+    /*width: 50%;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#term{
+    overflow: scroll;
+}
