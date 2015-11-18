@@ -169,21 +169,21 @@ body {
 }
 
 #fileimg {
-	background-image: url(../file.png);
+	background-image: url(../images/file.png);
 	background-size: 200px 200px;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 
 #arrowimg {
-	background-image: url(../arrow.png);
+	background-image: url(../images/arrow.png);
 	background-size: 160px 160px;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 
 #floppyimg {
-	background-image: url(../floppy-disk.png);
+	background-image: url(../images/floppy-disk.png);
 	background-size: 150px 150px;
 	background-repeat: no-repeat;
 	background-position: center center;
