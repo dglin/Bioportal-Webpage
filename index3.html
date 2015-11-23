@@ -41,11 +41,11 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="http://www.vetmed.ucdavis.edu/cadms/">Our Team</a></li>
-                <li><a href="funding.html">Partners and Collaborators</a></li>
-                <li><a href="javascript:void(0)" onclick = "
+                <li id="navbarDynamic"><a href="#">Home</a></li>
+                <li id="navbarDynamic"><a href="about.html">About</a></li>
+                <li id="navbarDynamic"><a href="http://www.vetmed.ucdavis.edu/cadms/">Our Team</a></li>
+                <li id="navbarDynamic"><a href="funding.html">Partners and Collaborators</a></li>
+                <li id="navbarDynamic"><a href="javascript:void(0)" onclick = "
 
                             document.getElementById('contact').style.display='block';
                             document.getElementById('fade').style.display='block'
@@ -53,13 +53,13 @@
                             ">Contact Us</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="javascript:void(0)" onclick = "
+<!--               <li class="blueFadein"><a href="javascript:void(0)" onclick = "
 
                             document.getElementById('signup').style.display='block';
                             document.getElementById('fade').style.display='block'
 
-                            ">Sign Up</a></li>
-              <li><a href="javascript:void(0)" onclick = "
+                            ">Sign Up</a></li> -->
+              <li class="blueFadein"><a href="javascript:void(0)" onclick = "
 
                             document.getElementById('login').style.display='block';
                             document.getElementById('fade').style.display='block'
@@ -107,25 +107,26 @@
 
         <div class="jumbotron" id="wrap" style="text-align: center; background: white; padding: 0px;">
         <h1 style="font-size: 250%;"><bold>HOW IT WORKS</bold></h1>
-        <table style="width:100%">
+        <table style="align: center; width:100%;">
             <tr>
-            <td><div class="circle" id="fileimg"></div></td>
-            <td><div class="circle" id="arrowimg"></div></td>
-            <td><div class="circle" id ="floppyimg"></div></td>
-            </tr>
-            <tr>
-            <td>
-                <h3>Select Database</h3>
-                <p>Query, filter and combine databases</p>
-                <p>Upload your own data</p>
+            <td class="blueFadein" id="file">
+                <div class="circle" id="fileimg"></div>
+                <h3 style="padding-top: 15px;">Select Database</h3>
+                <p style="padding-top: 15px;">
+                    Query, filter and combine databases
+                </p>
+                <p style="padding-top: 15px;">
+                    Upload your own data
+                </p>
             </td>
-            <td>
+            <td class="blueFadein" id="arrow">
+                <div class="circle" id="arrowimg"></div>
                 <h3>Visualize + Analyze</h3>
                 <p>Space-time-genomic analysis</p>
                 <p>Find trends and patterns</p>
-                </ul>
             </td>
-            <td>
+            <td class="blueFadein" id="floppy">
+                <div class="circle" id ="floppyimg"></div>
                 <h3>Save Dashboard</h3>
                 <p>Store and share dashboards</p>
                 <p>Create and submit detailed reports</p>
@@ -208,7 +209,7 @@
                 <div class="form-group">
                     <label for="password" class="col-sm-3 control-label">Password</label>
                     <div class="col-sm-9">
-                        <input type="password" id="password" placeholder="Required" class="form-control">
+                        <input type="password" id="password" placeholder="Required. 6-12 characters, must include numbers" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
@@ -579,6 +580,15 @@
                         <input type="password" id="password" placeholder="Required" class="form-control">
                     </div>
                 </div>
+                <div>
+                    <p>Do not have an account? <a href="javascript:void(0)" onclick = "
+
+                            document.getElementById('signup').style.display='block';
+                            document.getElementById('login').style.display='none';
+
+
+                            ">Sign up</a> here.</p>
+                </div>
                 <div class="form-group">
                     <div class="col-sm-9 col-sm-offset-3">
                         <a href="javascript:void(0)" onclick = "
@@ -595,18 +605,7 @@
 	<div id="fade" class="black_overlay"></div>
 
 	</div>
-
-    <!-- Select database -->
-
-<!-- 	<div class="background" id="search">
-        <img src="search.png" class="stretch">
-	</div> -->
-
-    <!-- Select database -->
-
-
-
-	 <!-- Not displaying properly -->
+ <!-- Not displaying properly -->
     <div id="footer">
       <div class="container" id="footer-container">
         <p class="muted credit">Copyright © The Regents of the University of California, Davis campus, All Rights Reserved</p>

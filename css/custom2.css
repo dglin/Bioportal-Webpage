@@ -3,6 +3,32 @@
 	background: #336666;
 	background:rgba(255,255,255,0.75);
 	border-color: transparent;
+    min-height: 50px;
+    margin-bottom: 0px;
+}
+
+#navbarDynamic{
+    background: white;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+#navbarDynamic:hover{
+    background:#e6e6e6;
+}
+
+.blueFadein{
+    background: white;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+.blueFadein:hover{
+    background:#ADD8E6;
 }
 
 
@@ -156,6 +182,7 @@ body {
 
 
 .circle {
+    padding-top: 30px;
     width: 200px;
     height: 200px;
     -webkit-border-radius: 25px;
@@ -173,6 +200,7 @@ body {
 	background-size: 200px 200px;
 	background-repeat: no-repeat;
 	background-position: center center;
+    padding: 30px;
 }
 
 #arrowimg {
@@ -180,6 +208,7 @@ body {
 	background-size: 160px 160px;
 	background-repeat: no-repeat;
 	background-position: center center;
+    padding: 30px;
 }
 
 #floppyimg {
@@ -187,6 +216,7 @@ body {
 	background-size: 150px 150px;
 	background-repeat: no-repeat;
 	background-position: center center;
+    padding: 30px;
 }
 
 .carousel-inner{
