@@ -93,7 +93,7 @@
         <div class="container-popup">
             <form class="form-horizontal" role="form" style="align: left;">
                 <h2 style="text-align:left; padding-left: 0px; left:0px;">Contact</h2>
-                <p>We welcome your feedback and questions<p>
+                <li>We welcome your feedback and questions<li>
                 <div class="form-group">
                     <div class="dropdown">
                         <button id="contactButton" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
@@ -514,7 +514,7 @@
             ">×</a>
         <div class="container-popup">
             <form class="form-horizontal" role="form">
-                <h2 style = "align:center;">Log In</h2>
+                <h2 style = "text-align:center;">Log In</h2>
                 <div class="form-group">
                     <label for="email" class="col-sm-3 control-label">Username</label>
                     <div class="col-sm-9">
@@ -526,6 +526,15 @@
                     <div class="col-sm-9">
                         <input type="password" id="password" placeholder="Required" class="form-control">
                     </div>
+                </div>
+                <div>
+                    <li>Do not have an account? <a href="javascript:void(0)" onclick = "
+
+                            document.getElementById('signup').style.display='block';
+                            document.getElementById('login').style.display='none';
+
+
+                            ">Sign up</a> here.</p>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-9 col-sm-offset-3">
@@ -555,40 +564,42 @@
       </div>
       <div id="navbarAbout" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-            <li id="navbarDynamicAbout"><a href="javascript:void(0)" onclick = "
+            <li id="navbarDynamic"><a href="javascript:void(0)" onclick = "
 
                             document.getElementById('aboutText2').style.display='block';
                             document.getElementById('aboutText').style.display='none'
 
-                            ">About Disease BioPortal®</a></li>
-            <li id="navbarDynamicAbout1"><a href="javascript:void(0)" onclick = "
+                            " style="border: 1px solid black; border-radius: 5px;">About Disease BioPortal®</a></li>
+            <li id="navbarDynamic"><a href="javascript:void(0)" onclick = "
 
                             document.getElementById('aboutText').style.display='block';
                             document.getElementById('aboutText2').style.display='none'
 
-                            ">What Disease BioPortal is useful for?</a></li>
+                            " style="border: 1px solid black; border-radius: 5px;">What Disease BioPortal® is useful for?</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div><!--/.container-fluid -->
   </nav>
-    <div id="aboutText" class="center-text" style="text-align:left;font-family: 'Montserrat', sans-serif;">
-        <h1><bold>What Disease BioPortal is useful for?</bold></h1>
-        <p>Provides a comprehensive, user-friendly, set of tools and capabilities to analyze, integrate and display data routinely collected by producers, practitioners, reference laboratories, etc. for risk assessment, outbreak investigation and emergency response.</p>
-        <p>Allows the near-real time evaluation of epidemiologic and phylogenetic data to better understand dynamics and risk factors for disease transmission and support timely disease prevention and control and farm benchmarking.</p>
-        <p>Secure access and limited visualization/download of sensitive data</p>
-        <p>Ability to link to other sources of data and databases (OIE, GenBank, data from other reference laboratories, climatic and environmental data, etc.) without requirements of changing local databases and keeping confidentiality</p>
-        <p>Contribution to the development of a near real-time surveillance system for infectious diseases at local and global level.</p>
-        <p>Supports the training, communication and technology transfer activities for producers, practitioners and other stakeholders by improving skills, awareness and risk perception.</p>
+    <div id="aboutText" class="center-text" style="text-align:left;font-family: 'Montserrat', sans-serif; padding-left: 25px">
+        <h1><bold>What Disease BioPortal® is useful for?</bold></h1>
+        <ul>
+        <li>Provides a comprehensive, user-friendly, set of tools and capabilities to analyze, integrate and display data routinely collected by producers, practitioners, reference laboratories, etc. for risk assessment, outbreak investigation and emergency response.</li>
+        <li>Allows the near-real time evaluation of epidemiologic and phylogenetic data to better understand dynamics and risk factors for disease transmission and support timely disease prevention and control and farm benchmarking.</li>
+        <li>Secure access and limited visualization/download of sensitive data</li>
+        <li>Ability to link to other sources of data and databases (OIE, GenBank, data from other reference laboratories, climatic and environmental data, etc.) without requirements of changing local databases and keeping confidentiality</li>
+        <li>Contribution to the development of a near real-time surveillance system for infectious diseases at local and global level.</li>
+        <li>Supports the training, communication and technology transfer activities for producers, practitioners and other stakeholders by improving skills, awareness and risk perception.</li>
+    </ul>
 
     </div>
-    <div id="aboutText2" class="center-text" style="text-align:left;font-family: 'Montserrat', sans-serif;">
+    <div id="aboutText2" class="center-text" style="text-align:left;font-family: 'Montserrat', sans-serif; padding-left: 25px">
         <h2><big>About Disease BioPortal®</big></h2>
-        <p style="font-size: 10;">The Disease BioPortal is a web-based system that provides real-time or near-real time access to local, regional, and global disease information and other associated data (e.g. animal and human demographics, production records, trade, climatic and environmental variables, etc.). </p>
-        <p>The system provides access to publicly available databases, as well as to private data through secure routing and sharing mechanisms. </p>
-        <p>Tools are available for spatio- temporal display, graphics, phylogenetic and social network analysis of the data, as well as for downloading or uploading data.</p>
-        <p>The Disease BioPortal is operated and maintained by the <a href="http://www.vetmed.ucdavis.edu/cadms/">Center for Animal Disease Modeling and Surveillance (CADMS)</a> at the University of California, Davis and is supported through a consortium of national and international collaborating institutions, agencies, and organizations.</p>
-        <p>Hundreds of users from around the world, including producers, private and official veterinarians, public health officials and researchers are using Disease BioPortal as reference tool to inform their decision6s for better prevention and control of infectious diseases. </p>
-        <p>To become involved or for more information, please contact us.</p>
+        <li style="font-size: 10;">The Disease BioPortal® is a web-based system that provides real-time or near-real time access to local, regional, and global disease information and other associated data (e.g. animal and human demographics, production records, trade, climatic and environmental variables, etc.). </li>
+        <li>The system provides access to publicly available databases, as well as to private data through secure routing and sharing mechanisms. </li>
+        <li>Tools are available for spatio- temporal display, graphics, phylogenetic and social network analysis of the data, as well as for downloading or uploading data.</li>
+        <li>The Disease BioPortal® is operated and maintained by the <a href="http://www.vetmed.ucdavis.edu/cadms/">Center for Animal Disease Modeling and Surveillance (CADMS)</a> at the University of California, Davis and is supported through a consortium of national and international collaborating institutions, agencies, and organizations.</li>
+        <li>Hundreds of users from around the world, including producers, private and official veterinarians, public health officials and researchers are using Disease BioPortal as reference tool to inform their decision6s for better prevention and control of infectious diseases. </li>
+        <li>To become involved or for more information, please contact us.</li>
     </div>
 
 
