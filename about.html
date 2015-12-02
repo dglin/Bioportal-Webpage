@@ -65,7 +65,7 @@
       </nav>
    
       <div class="jumbotron" id="no-padding">
-
+<!-- 
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <div class="container-fluid">
                  <div class="overlay" style="top:8%;" id="transparentBorder">
@@ -73,7 +73,7 @@
                         <p style="font-size: 10;">The Disease BioPortal is a web-based system that provides real-time or near-real time access to local, regional, and global disease information and other associated data (e.g. animal and human demographics, production records, trade, climatic and environmental variables, etc.). The system provides access to publicly available databases, as well as to private data through secure routing and sharing mechanisms. Tools are available for spatio- temporal display, graphics, phylogenetic and social network analysis of the data, as well as for downloading or uploading data. The Disease BioPortal is operated and maintained by the Center for Animal Disease Modeling and Surveillance (CADMS) at the University of California, Davis and is supported through a consortium of national and international collaborating institutions, agencies, and organizations. Hundreds of users from around the world, including producers, private and official veterinarians, public health officials and researchers are using Disease BioPortal as reference tool to inform their decisions for better prevention and control of infectious diseases. To become involved or for more information, please contact us.</p>
 
                 </div>
-            </div>
+            </div> -->
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
@@ -541,7 +541,37 @@
         </div> <!-- ./container -->
     </div>
     <div id="fade" class="black_overlay"></div>
-    <div id="wrap" class="center-text" style="text-align:left;font-family: 'Montserrat', sans-serif;">
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarAbout" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- <a class="navbar-brand" href="index3.html"><big>Home</big></a> -->
+      </div>
+      <div id="navbarAbout" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li id="navbarDynamicAbout"><a href="javascript:void(0)" onclick = "
+
+                            document.getElementById('aboutText2').style.display='block';
+                            document.getElementById('aboutText').style.display='none'
+
+                            ">About Disease BioPortal®</a></li>
+            <li id="navbarDynamicAbout1"><a href="javascript:void(0)" onclick = "
+
+                            document.getElementById('aboutText').style.display='block';
+                            document.getElementById('aboutText2').style.display='none'
+
+                            ">What Disease BioPortal is useful for?</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+    <div id="aboutText" class="center-text" style="text-align:left;font-family: 'Montserrat', sans-serif;">
         <h1><bold>What Disease BioPortal is useful for?</bold></h1>
         <p>Provides a comprehensive, user-friendly, set of tools and capabilities to analyze, integrate and display data routinely collected by producers, practitioners, reference laboratories, etc. for risk assessment, outbreak investigation and emergency response.</p>
         <p>Allows the near-real time evaluation of epidemiologic and phylogenetic data to better understand dynamics and risk factors for disease transmission and support timely disease prevention and control and farm benchmarking.</p>
@@ -550,6 +580,15 @@
         <p>Contribution to the development of a near real-time surveillance system for infectious diseases at local and global level.</p>
         <p>Supports the training, communication and technology transfer activities for producers, practitioners and other stakeholders by improving skills, awareness and risk perception.</p>
 
+    </div>
+    <div id="aboutText2" class="center-text" style="text-align:left;font-family: 'Montserrat', sans-serif;">
+        <h2><big>About Disease BioPortal®</big></h2>
+        <p style="font-size: 10;">The Disease BioPortal is a web-based system that provides real-time or near-real time access to local, regional, and global disease information and other associated data (e.g. animal and human demographics, production records, trade, climatic and environmental variables, etc.). </p>
+        <p>The system provides access to publicly available databases, as well as to private data through secure routing and sharing mechanisms. </p>
+        <p>Tools are available for spatio- temporal display, graphics, phylogenetic and social network analysis of the data, as well as for downloading or uploading data.</p>
+        <p>The Disease BioPortal is operated and maintained by the <a href="http://www.vetmed.ucdavis.edu/cadms/">Center for Animal Disease Modeling and Surveillance (CADMS)</a> at the University of California, Davis and is supported through a consortium of national and international collaborating institutions, agencies, and organizations.</p>
+        <p>Hundreds of users from around the world, including producers, private and official veterinarians, public health officials and researchers are using Disease BioPortal as reference tool to inform their decision6s for better prevention and control of infectious diseases. </p>
+        <p>To become involved or for more information, please contact us.</p>
     </div>
 
 
@@ -566,6 +605,20 @@
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+     <script>
+        $(document).ready(function(){
+            $("#aboutText").hide();
+            // $("navbarDynamicAbout").click(function(){
+            //     $("aboutText").show();
+            //     $("aboutText2").hide();
+            // })
+            // $("navbarDynamicAbout1").click(function(){
+            //     $("aboutText2").show();
+            //     $("aboutText").hide();
+            // })
+        });
+    </script>
 
   </body>
 </html>
