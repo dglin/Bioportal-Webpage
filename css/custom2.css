@@ -250,6 +250,20 @@ body {
   text-align:left;
 }
 
+.toolTransbox{
+    font-size: large;
+    background-color: #e6e6e6;
+    opacity: 0.8;
+    font-family: 'Montserrat', sans-serif;
+    position:absolute;
+    z-index:12;
+    top:5%;
+    margin-left: 75px;
+    /*margin-right: 75px;*/
+    width:80%;
+    text-align:left;
+}
+
 .footer, .push {
 	height: 4em;
 }
