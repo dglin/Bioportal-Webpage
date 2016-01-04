@@ -1,3 +1,16 @@
+.imageBlock {
+    width: 100%;
+    padding: 50px;
+    height: 250px;
+}
+
+.toolImages {
+    width: 350px;
+    height: 250px;
+    float: left;
+}
+
+
 .navbar {
 	background-color: #336666;
 	background: #336666;
@@ -358,6 +371,9 @@ body {
         height: 300px;
         overflow: scroll;
     }
+    #halfsheep{
+        width: 100%;
+    }
 
 }
 
@@ -477,8 +493,8 @@ code {
   margin-top: 1em;
 }
 
-.centerTable{
     /*width: 50%;*/
+.centerTable{
     margin-left: auto;
     margin-right: auto;
 }
@@ -487,4 +503,9 @@ code {
     overflow: scroll;
     font-size: 300px;
 
+}
+
+tr.spaceRows > td
+{
+  padding-bottom: 2em;
 }
