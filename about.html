@@ -63,26 +63,10 @@
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
     </nav>
-   
-      <div class="jumbotron" id="aboutCarousel">
-<!-- 
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <div class="container-fluid">
-                 <div class="overlay" style="top:8%;" id="transparentBorder">
-                        <h2><big>About Disease BioPortal®</big></h2>
-                        <p style="font-size: 10;">The Disease BioPortal is a web-based system that provides real-time or near-real time access to local, regional, and global disease information and other associated data (e.g. animal and human demographics, production records, trade, climatic and environmental variables, etc.). The system provides access to publicly available databases, as well as to private data through secure routing and sharing mechanisms. Tools are available for spatio- temporal display, graphics, phylogenetic and social network analysis of the data, as well as for downloading or uploading data. The Disease BioPortal is operated and maintained by the Center for Animal Disease Modeling and Surveillance (CADMS) at the University of California, Davis and is supported through a consortium of national and international collaborating institutions, agencies, and organizations. Hundreds of users from around the world, including producers, private and official veterinarians, public health officials and researchers are using Disease BioPortal as reference tool to inform their decisions for better prevention and control of infectious diseases. To become involved or for more information, please contact us.</p>
-
-                </div>
-            </div> -->
-                <!-- Wrapper for slides -->
-        <div id="halfsheep" class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img class="img-responsive center-block" src="images/halfsheep.jpg" alt="Sheep">
-            </div>
-        </div>
-      </div>
-        <div class="aboutText">
-            <h1><bold>What Disease BioPortal® is useful for?</bold></h1>
+    <div class="aboutTitle">
+        <img src="images/logo.png" style="height:100px;">
+        <h1 style="padding-left:5%;">What the Disease BioPortal® is useful for<a id="firstDropDown"><img src="images/dropdownarrow.png" style="width: 9%; height: 9%;"></a></h1>
+        <div id="firstDropDownDescription">
             <ul>
                 <li>Provides a comprehensive, user-friendly, set of tools and capabilities to analyze, integrate and display data routinely collected by producers, practitioners, reference laboratories, etc. for risk assessment, outbreak investigation and emergency response.</li>
                 <li>Allows the near-real time evaluation of epidemiologic and phylogenetic data to better understand dynamics and risk factors for disease transmission and support timely disease prevention and control and farm benchmarking.</li>
@@ -92,9 +76,18 @@
                 <li>Supports the training, communication and technology transfer activities for producers, practitioners and other stakeholders by improving skills, awareness and risk perception.</li>
             </ul>
         </div>
-
-        <div class="aboutText">
-            <h2><big>About Disease BioPortal®</big></h2>
+    </div>
+        
+      <div class="jumbotron" id="no-padding">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="img-responsive center-block" src="images/sheep.jpg" alt="Sheep">
+            </div>
+        </div>
+      </div>
+    <div class="aboutTitle">
+        <h1 style="padding-left:5%;">About the Disease BioPortal®<a id="secondDropDown"><img src="images/dropdownarrow.png" style="width: 9%; height: 9%;"></a></h1>
+        <div id="secondDropDownDescription">
             <ul>
                 <li style="font-size: 10;">The Disease BioPortal® is a web-based system that provides real-time or near-real time access to local, regional, and global disease information and other associated data (e.g. animal and human demographics, production records, trade, climatic and environmental variables, etc.). </li>
                 <li>The system provides access to publicly available databases, as well as to private data through secure routing and sharing mechanisms. </li>
@@ -582,6 +575,34 @@
 	
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var click = true;
+            $("#firstDropDownDescription").hide();
+            $("#firstDropDown").click(function(){
+                if(click){
+                    $("#firstDropDownDescription").slideDown();
+                    click = false;
+                }
+                else{
+                    $("#firstDropDownDescription").slideUp();
+                    click = true;
+                }
+            })
+            var click2 = true;
+            $("#secondDropDownDescription").hide();
+            $("#secondDropDown").click(function(){
+                if(click2){
+                    $("#secondDropDownDescription").slideDown();
+                    click2 = false;
+                }
+                else{
+                    $("#secondDropDownDescription").slideUp();
+                    click2 = true;
+                }
+            })
+        })
+    </script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>

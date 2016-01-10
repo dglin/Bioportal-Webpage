@@ -157,6 +157,14 @@ body {
     float:right;
  }
 
+ .aboutTitle{
+    text-align:left;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgb(250,247,245);
+    /*font-family: 'Montserrat', sans-serif;*/
+ }
+
 .aboutText{
     float: left; 
     width: 50%; 
