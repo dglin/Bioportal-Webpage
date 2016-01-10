@@ -5,8 +5,8 @@
 }
 
 .toolImages {
-    width: 350px;
-    height: 250px;
+    width: 315px;
+    height: 225px;
     float: left;
 }
 
@@ -146,6 +146,24 @@ body {
 	top: 0px;
 	padding: 0;
  }
+
+ #aboutCarousel {
+    background: white;
+    /*position: absolute;*/
+    height:100%;
+    top: 0px;
+    padding: 0;
+    width: 50%; 
+    float:right;
+ }
+
+.aboutText{
+    float: left; 
+    width: 50%; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
  
 .item img {
 	width: 100%;
@@ -263,19 +281,6 @@ body {
   text-align:left;
 }
 
-.toolTransbox{
-    font-size: large;
-    background-color: #e6e6e6;
-    opacity: 0.8;
-    font-family: 'Montserrat', sans-serif;
-    position:absolute;
-    z-index:12;
-    top:5%;
-    margin-left: 75px;
-    /*margin-right: 75px;*/
-    width:80%;
-    text-align:left;
-}
 
 .footer, .push {
 	height: 4em;
@@ -342,7 +347,7 @@ body {
     .overlay{
         font-size: 10px;
         height: 450px;
-        overflow: scroll;
+        overflow: hidden;
     }
 
 }
@@ -351,7 +356,7 @@ body {
     .overlay{
         font-size: 10px;
         height: 400px;
-        overflow: scroll;
+        overflow: hidden;
     }
 
 }
@@ -360,7 +365,7 @@ body {
     .overlay{
         font-size: 10px;
         height: 350px;
-        overflow: scroll;
+        overflow: hidden;
     }
 
 }
@@ -369,9 +374,14 @@ body {
     .overlay{
         font-size: 10px;
         height: 300px;
-        overflow: scroll;
+        overflow: hidden;
     }
-    #halfsheep{
+    .aboutText{
+        float:none;
+        width: 100%;
+    }
+    #aboutCarousel{
+        float:none;
         width: 100%;
     }
 
@@ -385,16 +395,16 @@ body {
     .overlay{
         font-size: 10px;
         height: 250px;
-        overflow: scroll;
+        overflow: hidden;
     }
     #login{
-        overflow:scroll;
+        overflow:hidden;
     }
     #signup{
-        overflow:scroll;
+        overflow:hidden;
     }
     #contact{
-        overflow:scroll;
+        overflow:hidden;
     }
 /*    h2{
         font-size: 20px
@@ -406,7 +416,7 @@ body {
     .overlay{
         font-size: 10px;
         height: 200px;
-        overflow: scroll;
+        overflow: hidden;
     }
 }
 
@@ -443,7 +453,7 @@ body {
 }
 
 #footer {
-    background-color: #f5f5f5;
+    background-color: #e5e5e5;
     position: auto;
     bottom: 0;
     padding:0 20px;
