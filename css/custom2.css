@@ -30,6 +30,18 @@
 }
 #navbarDynamic:hover{
     background:#e6e6e6;
+    font-size: 120%;
+}
+
+.btn{
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+.btn:hover{
+    background:#e6e6e6;
 }
 
 .blueFadein{
@@ -42,6 +54,7 @@
 }
 .blueFadein:hover{
     background:#ADD8E6;
+    font-size:120%;
 }
 
 .greyFadeIn{
