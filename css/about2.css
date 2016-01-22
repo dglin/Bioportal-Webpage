@@ -14,16 +14,14 @@ html {
     font-size: 14px; 
 }
 
-<<<<<<< HEAD
 .descriptionFont {
     font-size: 18px;
     font-weight: 400;
     height:150px;
-=======
+}
 .lead {
     font-size: 18px;
     font-weight: 400;
->>>>>>> 702a552bfa6f829748f04c16d5ce9b25a8ed49f5
 }
 
 .intro-header {
@@ -102,7 +100,6 @@ html {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(../img/banner-bg.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -146,15 +143,6 @@ html {
     }
 }
 
-footer {
-    padding: 50px 0;
-    background-color: #f8f8f8;
-}
-
-p.copyright {
-    margin: 15px 0 0;
-<<<<<<< HEAD
-}*/
 
 #swap {
     vertical - align: top;
@@ -166,6 +154,19 @@ p.copyright {
 #swap > span {
     position: absolute;
 }
-=======
-}*/
->>>>>>> 702a552bfa6f829748f04c16d5ce9b25a8ed49f5
+
+#swap2 {
+    vertical - align: top;
+    width: 0;
+    height: 1em;
+ /* needed. px, em or any other */;
+}
+
+#swap2 > span {
+    position: absolute;
+}
+
+.carouselImages{
+    height: 230px;
+    width: 300px;
+}
