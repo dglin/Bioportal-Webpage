@@ -39,7 +39,7 @@
                 <li id="navbarDynamic"><a href="about2.html">About</a></li>
                 <li id="navbarDynamic"><a href="tools2.html">Tools</a></li>
                 <li id="navbarDynamic"><a href="http://www.vetmed.ucdavis.edu/cadms/">Our Team</a></li>
-                <li id="navbarDynamic"><a href="funding.html">Partners and Collaborators</a></li>
+                <li id="navbarDynamic"><a href="funding2.html">Partners and Collaborators</a></li>
                 <li id="navbarDynamic"><a href="javascript:void(0)" onclick = "
 
                             document.getElementById('contact').style.display='block';
@@ -65,21 +65,19 @@
         </div><!--/.container-fluid -->
     </nav>
 
-
-    <!-- Header  carousel-->
-    <a name="about"></a>
     <div class="intro-header">
         <div class="container">
 
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
+                        <!-- <h3 style="font-size: 200%;"><big>About the</big></h3> -->
                         <img src="images/logo.png" style="height:100px;">
                         <h3>A web-based system that provides real-time or near-real time access to local, regional, and global disease information</h3>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a href="#lb" class="btn btn-default btn-lg"><span class="carouselbuttons">Functionalities</span></a>
+                                <a href="#lb" class="btn btn-default btn-lg"><span class="carouselbuttons">Purpose</span></a>
                             </li>
                             <li>
                                 <a href="#rb" class="btn btn-default btn-lg" id="rb"><span class="carouselbuttons">About Us</span></a>
@@ -113,7 +111,7 @@
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                       <!-- Indicators -->
                       <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="0"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
                         <li data-target="#myCarousel" data-slide-to="2"></li>
                         <li data-target="#myCarousel" data-slide-to="3"></li>
@@ -164,7 +162,7 @@
                     <div id="myCarousel2" class="carousel slide" data-ride="carousel">
                       <!-- Indicators -->
                       <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="0"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
                         <li data-target="#myCarousel" data-slide-to="2"></li>
                         <li data-target="#myCarousel" data-slide-to="3"></li>
@@ -631,7 +629,10 @@
 
     <script>
     $(document).ready(function() { // DOM ready
-          var txt = ['Provides a comprehensive, user-friendly, set of tools and capabilities to analyze, integrate and display data routinely collected by producers, practitioners, reference laboratories, etc. for risk assessment, outbreak investigation and emergency response.', 'Allows the near-real time evaluation of epidemiologic and phylogenetic data to better understand dynamics and risk factors for disease transmission and support timely disease prevention and control and farm benchmarking.', 'Secure access and limited visualization/download of sensitive data. Ability to link to other sources of data and databases (OIE, GenBank, data from other reference laboratories, climatic and environmental data, etc.) without requirements of changing local databases and keeping confidentiality', 'Contribution to the development of a near real-time surveillance system for infectious diseases at local and global level. Supports the training, communication and technology transfer activities for producers, practitioners and other stakeholders by improving skills, awareness and risk perception.'],
+          var txt = ['Provides a comprehensive, user-friendly, set of tools and capabilities to analyze, integrate and display data routinely collected by producers, practitioners, reference laboratories, etc. for risk assessment, outbreak investigation and emergency response.'
+          , 'Allows the near-real time evaluation of epidemiologic and phylogenetic data to better understand dynamics and risk factors for disease transmission and support timely disease prevention and control and farm benchmarking.'
+          , 'Secure access and limited visualization/download of sensitive data. Ability to link to other sources of data and databases (OIE, GenBank, data from other reference laboratories, climatic and environmental data, etc.) without requirements of changing local databases and keeping confidentiality'
+          , 'Contribution to the development of a near real-time surveillance system for infectious diseases at local and global level. Supports the training, communication and technology transfer activities for producers, practitioners and other stakeholders by improving skills, awareness and risk perception.'],
               n = txt.length,
               $swap = $('#swap'),
               $span,
@@ -642,7 +643,10 @@
           $span = $("span", $swap).hide(); 
 
 
-          var txt2 = ['The Disease BioPortal® is a web-based system that provides real-time or near-real time access to local, regional, and global disease information and other associated data (e.g. animal and human demographics, production records, trade, climatic and environmental variables, etc.). ', 'The system provides access to publicly available databases, as well as to private data through secure routing and sharing mechanisms.Tools are available for spatio- temporal display, graphics, phylogenetic and social network analysis of the data, as well as for downloading or uploading data.', 'The Disease BioPortal® is operated and maintained by the Center for Animal Disease Modeling and Surveillance (CADMS) at the University of California, Davis and is supported through a consortium of national and international collaborating institutions, agencies, and organizations.', 'Hundreds of users from around the world, including producers, private and official veterinarians, public health officials and researchers are using Disease BioPortal as reference tool to inform their decision6s for better prevention and control of infectious diseases. To become involved or for more information, please contact us.'],
+          var txt2 = ['The Disease BioPortal® is a web-based system that provides real-time or near-real time access to local, regional, and global disease information and other associated data (e.g. animal and human demographics, production records, trade, climatic and environmental variables, etc.). '
+          , 'The system provides access to publicly available databases, as well as to private data through secure routing and sharing mechanisms.Tools are available for spatio- temporal display, graphics, phylogenetic and social network analysis of the data, as well as for downloading or uploading data.'
+          , 'The Disease BioPortal® is operated and maintained by the Center for Animal Disease Modeling and Surveillance (CADMS) at the University of California, Davis and is supported through a consortium of national and international collaborating institutions, agencies, and organizations.'
+          , 'Hundreds of users from around the world, including producers, private and official veterinarians, public health officials and researchers are using Disease BioPortal as reference tool to inform their decision6s for better prevention and control of infectious diseases. To become involved or for more information, please contact us.'],
               k = txt2.length,
               $swap2 = $('#swap2'),
               $span2,
@@ -655,23 +659,18 @@
           (function loop(){
             c = ++c % n;
             $swap.animate({width: $span.eq( c ).width() });
-            $span.stop().fadeOut().eq(c).fadeIn().delay(2000).show(0, loop);
+            $span.stop().fadeOut().eq(c).fadeIn().delay(4500).show(0, loop);
             $("#myCarousel").carousel("next");
           }());
 
           (function loop2(){
             f = ++f % k;
-            $swap2.animate({width: $span2.eq( c ).width() });
-            $span2.stop().fadeOut().eq(c).fadeIn().delay(2000).show(0, loop2);
+            $swap2.animate({width: $span2.eq( f ).width() });
+            $span2.stop().fadeOut().eq(c).fadeIn().delay(4500).show(0, loop2);
             $("#myCarousel2").carousel("next");
           }());
 
 
-          
-    });
-    </script>
-    <script>
-    $(document).ready(function() { // DOM ready
           
     });
     </script>

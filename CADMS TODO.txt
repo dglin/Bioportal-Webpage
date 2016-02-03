@@ -1,0 +1,6 @@
+Remove bullet text from the front page
+Tools banner image
+Tools page icons and descriptions slightly smaller
+Rename Functionalities => purpose
+Contact us wrong module from the tools page?
+Sectionalize partner and collaborator page.

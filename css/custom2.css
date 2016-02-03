@@ -1,3 +1,25 @@
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+.descriptionFont{
+    font-size: 18px;
+    font-weight: 400;
+    height:150px;
+}
+
+.carouselbuttons {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
 .imageBlock {
     width: 100%;
     padding: 50px;
@@ -5,11 +27,26 @@
 }
 
 .toolImages {
-    width: 315px;
-    height: 225px;
+    width: 250px;
+    height: 175px;
     float: left;
 }
 
+
+.index-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../images/usa2.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.index-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
 
 .navbar {
 	background-color: #336666;
@@ -116,11 +153,14 @@
     border-radius: 10px;
 }
 
-
-body {
+body,
+html {
+    width: 100%;
+    height: 100%;
     background-color: #FFFFFF;
     overflow-x: hidden;
 }
+
 
 *[role="form"] {
     background-color: #FFFFFF;
@@ -151,6 +191,7 @@ body {
 	float: right;
 }
 
+
 #no-padding {
     background: white;
 	/*position: absolute;*/
@@ -159,7 +200,6 @@ body {
 	top: 0px;
 	padding: 0;
  }
-
  #aboutCarousel {
     background: white;
     /*position: absolute;*/
@@ -509,11 +549,7 @@ code {
     width:100%;
 }
 
-/*.fundPic {
-    padding-left: 50%;
-    /*padding-right: 50%;*/
-/*}
-*/
+
 /*.fundinglinks {
     list-style-type:none;
       margin: 1em 0;
@@ -526,8 +562,7 @@ code {
 
     /*width: 50%;*/
 .centerTable{
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 #term{
@@ -539,8 +574,4 @@ code {
 tr.spaceRows > td
 {
   padding-bottom: 2em;
-}
-
-#sentence{
-    height:150px;
 }

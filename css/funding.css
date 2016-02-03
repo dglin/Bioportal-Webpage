@@ -1,0 +1,44 @@
+.bounce {
+  position:absolute;
+  /*position:fixed;*/
+  left: 40%;
+  margin-top:-25px;
+  margin-left:-25px;
+  height:50px;
+  width:50px;
+  background:url(../images/bda.jpg);
+  background-size: cover;
+  -webkit-animation:bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:0;}
+}
+
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.fundPic {
+    padding-top: 10%;
+    /*padding-bottom: 50%;*/
+    margin: 0 auto;
+}
