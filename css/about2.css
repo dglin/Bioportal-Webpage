@@ -170,3 +170,9 @@ html {
     height: 230px;
     width: 300px;
 }
+
+#carouselButtons {
+    margin-left: 0px;
+    position: absolute;
+    bottom: 0px;
+}

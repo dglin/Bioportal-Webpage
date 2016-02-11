@@ -1,4 +1,4 @@
-
+<!-- http://jsfiddle.net/qHL8Z/3/ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,8 +38,8 @@
                 <li id="navbarDynamic"><a href="index3.html">Home</a></li>
                 <li id="navbarDynamic"><a href="about2.html">About</a></li>
                 <li id="navbarDynamic"><a href="tools2.html">Tools</a></li>
-                <li id="navbarDynamic"><a href="http://www.vetmed.ucdavis.edu/cadms/">Our Team</a></li>
-                <li id="navbarDynamic"><a href="funding2.html">Partners and Collaborators</a></li>
+                <!-- <li id="navbarDynamic"><a href="http://www.vetmed.ucdavis.edu/cadms/">Our Team</a></li> -->
+                <li id="navbarDynamic"><a href="funding3.html">Partners and Collaborators</a></li>
                 <li id="navbarDynamic"><a href="javascript:void(0)" onclick = "
 
                             document.getElementById('contact').style.display='block';
@@ -108,7 +108,7 @@
                     <p class="descriptionFont" id="sentence"><span id="swap"></span></p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
                       <!-- Indicators -->
                       <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0"></li>
@@ -138,6 +138,14 @@
 
                       </div>
                     </div>
+                  <div id="carouselButtons">
+                      <button id="playButton" type="button" class="btn btn-default btn-xs">
+                          <span class="glyphicon glyphicon-play"></span>
+                       </button>
+                      <button id="pauseButton" type="button" class="btn btn-default btn-xs">
+                          <span class="glyphicon glyphicon-pause"></span>
+                      </button>
+                  </div>
                 </div>
             </div>
 
@@ -159,7 +167,7 @@
                     <p class="descriptionFont" id="sentence"><span id="swap2"></span></p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                    <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="false">
                       <!-- Indicators -->
                       <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0"></li>
@@ -629,6 +637,7 @@
 
     <script>
     $(document).ready(function() { // DOM ready
+          var flag = 0;
           var txt = ['Provides a comprehensive, user-friendly, set of tools and capabilities to analyze, integrate and display data routinely collected by producers, practitioners, reference laboratories, etc. for risk assessment, outbreak investigation and emergency response.'
           , 'Allows the near-real time evaluation of epidemiologic and phylogenetic data to better understand dynamics and risk factors for disease transmission and support timely disease prevention and control and farm benchmarking.'
           , 'Secure access and limited visualization/download of sensitive data. Ability to link to other sources of data and databases (OIE, GenBank, data from other reference laboratories, climatic and environmental data, etc.) without requirements of changing local databases and keeping confidentiality'
@@ -657,6 +666,9 @@
           $span2 = $("span", $swap2).hide(); 
 
           (function loop(){
+            if(flag){
+                return;
+            }
             c = ++c % n;
             $swap.animate({width: $span.eq( c ).width() });
             $span.stop().fadeOut().eq(c).fadeIn().delay(4500).show(0, loop);
@@ -664,13 +676,33 @@
           }());
 
           (function loop2(){
+            if(flag){
+            while(flag){
+                loop2();
+            }
+            }
+            else{
             f = ++f % k;
             $swap2.animate({width: $span2.eq( f ).width() });
             $span2.stop().fadeOut().eq(c).fadeIn().delay(4500).show(0, loop2);
             $("#myCarousel2").carousel("next");
+            }
           }());
 
+          $(function () {
+                $('#playButton').click(function () {
+                    flag = 1;
+                    console.log("workingplay");
+                });
+                $('#pauseButton').click(function () {
+                    flag = 0;
+                    // loop();loop2();
+                    jQuery.ready()
+                    console.log("workingpause");
+                    $("#swap").stop();
 
+                });
+            });
           
     });
     </script>

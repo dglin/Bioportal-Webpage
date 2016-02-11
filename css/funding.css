@@ -38,7 +38,5 @@
 }
 
 .fundPic {
-    padding-top: 10%;
-    /*padding-bottom: 50%;*/
-    margin: 0 auto;
+  display: inline-block;
 }
