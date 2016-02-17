@@ -10,6 +10,20 @@ html {
     height: 100%;
 }
 
+.CarouselImg img {
+  width: auto;
+  height: 350px;
+  max-height: 350px;
+  min-height: 350px;
+}
+
+#infographic{
+    background:green;
+    float:left;
+    height:120%;
+    width:120%;
+}
+
 .topnav {
     font-size: 14px; 
 }
