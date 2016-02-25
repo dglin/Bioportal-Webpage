@@ -38,8 +38,8 @@
                 <li id="navbarDynamic"><a href="index3.html">Home</a></li>
                 <li id="navbarDynamic"><a href="about3.html">About</a></li>
                 <li id="navbarDynamic"><a href="tools2.html">Tools</a></li>
-                <!-- <li id="navbarDynamic"><a href="http://www.vetmed.ucdavis.edu/cadms/">Our Team</a></li> -->
                 <li id="navbarDynamic"><a href="funding3.html">Partners and Collaborators</a></li>
+                <li id="navbarDynamic"><a href="documentation.html">Documentation</a></li>
                 <li id="navbarDynamic"><a href="javascript:void(0)" onclick = "
 
                             document.getElementById('contact').style.display='block';
@@ -118,6 +118,12 @@
                       <button id="pauseButton" type="button" class="btn btn-default btn-xs">
                           <span class="glyphicon glyphicon-pause"></span>
                       </button>
+                      <button id="backwardButton" type="button" class="btn btn-default btn-xs">
+                          <span class="glyphicon glyphicon-backward"></span>
+                       </button>
+                        <button id="forwardButton" type="button" class="btn btn-default btn-xs">
+                          <span class="glyphicon glyphicon-forward"></span>
+                       </button>
                     </div>
                 </div>
                 <div class="col-lg-7">
@@ -146,7 +152,7 @@
                     <p class="descriptionFont" id="sentence">
                         <span id="r1">The Disease BioPortal® is a web-based system that provides real-time or near-real time access to local, regional, and global disease information and other associated data (e.g. animal and human demographics, production records, trade, climatic and environmental variables, etc.).</span>
                         <span id="r2">The system provides access to publicly available databases, as well as to private data through secure routing and sharing mechanisms.Tools are available for spatio- temporal display, graphics, phylogenetic and social network analysis of the data, as well as for downloading or uploading data.</span>
-                        <span id="r3">The Disease BioPortal® is operated and maintained by the <a href="http://www.vetmed.ucdavis.edu/cadms/">Center for Animal Disease Modeling and Surveillance (CADMS)</a> at the University of California, Davis and is supported through a <a href="/funding3.html">consortium of national and international collaborating institutions, agencies, and organizations.</a></span>
+                        <span id="r3">The Disease BioPortal® is operated and maintained by the <a href="http://www.vetmed.ucdavis.edu/cadms/">Center for Animal Disease Modeling and Surveillance (CADMS)</a> at the University of California, Davis and is supported through a <a href="funding3.html">consortium of national and international collaborating institutions, agencies, and organizations.</a></span>
                         <span id="r4">Hundreds of users from around the world, including producers, private and official veterinarians, public health officials and researchers are using Disease BioPortal® as reference tool to inform their decisions for better prevention and control of infectious diseases. To become involved or for more information, please contact us.</span>
                     </p>
                 </div>
@@ -179,14 +185,12 @@
                           <img src="images/ta.png" alt="Trend Analysis" class="CarouselImg">
                         </div>
 
-
                         <div class="item CarouselImg">
                           <img src="images/aboutslides/BeatrizMartinezLopezPigs.JPG" alt="pigs" class="CarouselImg">
                         </div>
                         <div class="item CarouselImg">
                           <img src="images/mle.png" alt="mle" class="CarouselImg">
                         </div>
-
 
                         <div class="item CarouselImg">
                           <img src="images/aboutslides/TadaishiYatabeCows.jpeg" alt="Cows" class="CarouselImg">
@@ -201,6 +205,12 @@
                           <button id="pauseButton2" type="button" class="btn btn-default btn-xs">
                               <span class="glyphicon glyphicon-pause"></span>
                           </button>
+                            <button id="backwardButton2" type="button" class="btn btn-default btn-xs">
+                              <span class="glyphicon glyphicon-backward"></span>
+                           </button>
+                            <button id="forwardButton2" type="button" class="btn btn-default btn-xs">
+                              <span class="glyphicon glyphicon-forward"></span>
+                           </button>
                         </div>
                       </div>
                     </div>                    
@@ -742,6 +752,21 @@
           //     $("#myCarousel2").carousel("next");
           // }, interval);
 
+        function hide(flag){
+            if(flag == 0){
+                $('#l1').hide();
+                $('#l2').hide();
+                $('#l3').hide();
+                $('#l4').hide();
+            }
+            else{
+              $('#r2').hide();
+              $('#r3').hide();
+              $('#r4').hide();
+              $('#r1').hide();
+            }
+        }
+
         $('#playButton').click(function () {
           if (timer !== null) return;
           timer = setInterval(function () {
@@ -818,6 +843,165 @@
 
         $('#playButton').trigger('click');
         $('#playButton2').trigger('click');
+
+        $('#forwardButton').click(function () {
+              hide(0);
+              value = value+1;
+              if(value % 4 == 1)
+              {
+                 
+                 $('#l1').hide();
+                 $('#l2').fadeIn();
+                 
+              }
+              else if(value % 4 == 2)
+              {
+                 
+                 $('#l2').hide();
+                 $('#l3').fadeIn(); 
+                 
+              }
+              else if(value % 4 == 3)
+              {
+                
+                $('#l3').hide();
+                $('#l4').fadeIn();
+                
+              }
+              else{
+                
+                $('#l4').hide();
+                $('#l1').fadeIn();
+                
+              }
+              $('#pauseButton').trigger('click');
+        });
+        $('#forwardButton2').click(function () {
+              hide(1);
+              value2 = value2+1;
+              if(value2 % 4 == 1)
+              {
+                 
+                 $('#r1').hide();
+                 $('#r2').fadeIn();
+                 
+              }
+              else if(value2 % 4 == 2)
+              {
+                 
+                 $('#r2').hide();
+                 $('#r3').fadeIn(); 
+                 
+              }
+              else if(value2 % 4 == 3)
+              {
+                
+                $('#r3').hide();
+                $('#r4').fadeIn();
+                
+              }
+              else{
+                
+                $('#r4').hide();
+                $('#r1').fadeIn();
+                
+              }
+              $('#pauseButton2').trigger('click');
+
+        });
+
+        $('#backwardButton').click(function () {
+              hide(0);
+              value = value-1;
+              if(value < 1)
+              {
+                value = value + 4;
+              }
+              if(value % 4 == 1)
+              {
+                 
+                 $('#l2').fadeIn();
+                 
+              }
+              else if(value % 4 == 2)
+              {
+                 
+                 $('#l3').fadeIn();
+                 
+              }
+              else if(value % 4 == 3)
+              {
+                
+                $('#l4').fadeIn();
+                
+              }
+              else{
+                
+                $('#l1').fadeIn();
+                
+              }
+              $('#pauseButton').trigger('click');
+
+        });
+        $('#backwardButton2').click(function () {
+              hide(1);
+              value2 = value2-1;
+              if(value2 < 1)
+              {
+                value2 = value2 + 4;
+              }
+              if(value2 % 4 == 1)
+              {
+                 
+                 $('#r2').fadeIn();
+                 
+              }
+              else if(value2 % 4 == 2)
+              {
+                 
+                 $('#r3').fadeIn();
+                 
+              }
+              else if(value2 % 4 == 3)
+              {
+                
+                $('#r4').fadeIn();
+                
+              }
+              else{
+                
+                $('#r1').fadeIn();
+                
+              }
+              $("#myCarousel2").carousel("prev");
+              $('#pauseButton2').trigger('click');
+
+        });
+
+        $("#op1").click(function() {
+            $("#contactButton").text('Science Question');
+        })
+        $("#op2").click(function() {
+            $("#contactButton").text('Technical Question');
+        })
+        $("#op3").click(function() {
+            $("#contactButton").text('Report A Problem');
+        })
+        $("#op4").click(function() {
+            $("#contactButton").text('Contact PI');
+        })
+        $("#op5").click(function() {
+            $("#contactButton").text('Web Training');
+        })
+        $("#op6").click(function() {
+            $("#contactButton").text('Other');
+        })
+        $("#terms").click(function(){
+            $("signupcontents").hide();
+            $("term").show();
+
+        })
+
           
     });
     </script>

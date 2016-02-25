@@ -41,8 +41,9 @@
                 <li id="navbarDynamic"><a href="index3.html">Home</a></li>
                 <li id="navbarDynamic"><a href="about3.html">About</a></li>
                 <li id="navbarDynamic"><a href="tools2.html">Tools</a></li>
-                <!-- <li id="navbarDynamic"><a href="http://www.vetmed.ucdavis.edu/cadms/">Our Team</a></li> -->
+
                 <li id="navbarDynamic"><a href="funding3.html">Partners and Collaborators</a></li>
+                <li id="navbarDynamic"><a href="documentation.html">Documentation</a></li>
                 <li id="navbarDynamic"><a href="javascript:void(0)" onclick = "
 
                             document.getElementById('contact').style.display='block';
@@ -107,12 +108,15 @@
                         <div style="display:inline-block;">
                             <img src="fundingpics/Picture6.png" alt="BOEHRINGER" style="display: block; margin-left: auto; margin-right:auto;">
                         </div>
+                        <div style="display:inline-block;">
+                            <img src="fundingpics/Picture18.png" alt="VETERINAE" style="display: block; margin-left: auto; margin-right:auto;">
+                        </div>
                     </div>
 
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Other Collaborators</h2>
                     <p class="descriptionFont">Additional collaborators and partnerships include the ones below:</p>
-                    <div style="width:95%; margin: 0 auto;">
+                    <div style="width:89%; margin: 0 auto;">
                       <img src="fundingpics/Picture1.png" class="fundPic" alt="USDA">
                       <img src="fundingpics/Picture3.png" class="fundPic" alt="OIE">
                       <img src="fundingpics/Picture4.png" class="fundPic" alt="FAO">
@@ -127,7 +131,6 @@
                       <img src="fundingpics/Picture15.png" class="fundPic" alt="GARA">
                       <img src="fundingpics/Picture16.png" class="fundPic" alt="UCDD">
                       <img src="fundingpics/Picture17.png" class="fundPic" alt="ASFORCE">
-                      <img src="fundingpics/Picture18.png" class="fundPic" alt="VETERINAE">
                       <img src="fundingpics/Picture19.png" class="fundPic" alt="LIBERTAS">
                     </div>
 
@@ -617,6 +620,32 @@
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#op1").click(function() {
+                $("#contactButton").text('Science Question');
+            })
+            $("#op2").click(function() {
+                $("#contactButton").text('Technical Question');
+            })
+            $("#op3").click(function() {
+                $("#contactButton").text('Report A Problem');
+            })
+            $("#op4").click(function() {
+                $("#contactButton").text('Contact PI');
+            })
+            $("#op5").click(function() {
+                $("#contactButton").text('Web Training');
+            })
+            $("#op6").click(function() {
+                $("#contactButton").text('Other');
+            })
+            $("#terms").click(function(){
+                $("signupcontents").hide();
+                $("term").show();
 
+            })
+        });
+    </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
