@@ -25,6 +25,12 @@ html {
     height: 250px;
 }
 
+#video{
+    padding-left: 25px;
+    width: 500px;
+    float: left;
+}
+
 .toolImages {
     width: 250px;
     height: 175px;
