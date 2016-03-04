@@ -47,6 +47,34 @@ html {
     background-size: cover;
 }
 
+
+.index-header2 {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../images/spain.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.index-header3 {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../images/index5.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.index-header4 {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../images/index6.jpg) no-repeat center center;
+    background-size: cover;
+}
+
 .index-message {
     position: relative;
     padding-top: 20%;
