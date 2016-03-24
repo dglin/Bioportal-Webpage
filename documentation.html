@@ -7,18 +7,23 @@
     <title>Disease BioPortal</title>
 
     <!-- Bootstrap -->
+    <script type="text/javascript" src="js/jwplayer/jwplayer.js"></script>
+    <script>jwplayer.key="bFTDVVZYFNnate09g9Mane9/AtU0apeh1uyZjQ==";</script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap-responsive.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/custom2.css">
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Exo+2:400,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>    
+
   </head>
   <body>
 
@@ -66,6 +71,19 @@
 
     <!-- main content section -->
     <div class="content-section-a">
+        <!-- <a class="fancybox" href="Videos/TrainingVideo.mp4" data-width="640" data-height="360">open second  video</a><br /><br /><br /> -->
+
+        <!-- <div id="container">Loading the player ...</div>
+        <script type="text/javascript">
+            jwplayer("container").setup({
+            flashplayer: "js/jwplayer/jwplayer.flash.swf",
+            file: "Videos/TrainingVideo.mp4",
+            height: 270,
+            width: 480
+            });
+        </script>
+ -->
+
         <hr class="section-heading-spacer">
         <div class="clearfix"></div>
         <h2 class="section-heading" align="center" style="padding-left:15px;">Training Videos</h2>
@@ -74,12 +92,12 @@
                 <table style="table-layout: fixed;">
             
                 <tr class="spaceRows">
-                    <td>                   
-                        <div id="video" align="center" class="embed-responsive embed-responsive-16by9">
-                            <video class="embed-responsive-item" controls>
-                                <source src="Videos/TrainingVideo.mp4" type=video/mp4>
-                            </video>
-                        </div>
+                    <td>
+                            <div align="center" class="embed-responsive embed-responsive-16by9">
+                                <video class="embed-responsive-item" controls>
+                                    <source src="video.mp4" type=video/mp4>
+                                </video>
+                            </div>
                     </td>
                     <td>
                         <h1 style="font-size: 150%; padding-left: 50px; padding-right: 50px;">Trend Analysis</h1>
@@ -88,7 +106,9 @@
                 </tr>
                 <tr class="spaceRows">
                     <td>
-                        <img src="images/ta.png" alt="Trend Analysis" style="height:316.5px; width:500px;">
+                        <a class="fancybox" caption="Trend Analysis" rel="group" href="images/ta.png">
+                            <img src="images/ta.png" alt="Trend Analysis" style="height:316.5px; width:500px;"/>
+                        </a>
                     </td>
                     <td>
                         <h1 style="font-size: 150%; padding-left: 50px; padding-right: 50px;">Dynamic phylogenetic analysis</h1>
@@ -99,7 +119,9 @@
             
                 <tr class="spaceRows">
                     <td>
-                        <img src="images/sna.png" alt="Social network analysis" style="height:316.5px; width:500px;">
+                        <a class="fancybox" caption="Social network analysis" rel="group" href="images/sna.png">
+                            <img src="images/sna.png" alt="Social network analysis" style="height:316.5px; width:500px;">
+                        </a>
                     </td>
                     <td>
                         <h1 style="font-size: 150%;  padding-left: 50px; padding-right: 50px;">Social network analysis</h1>
@@ -110,7 +132,9 @@
 
                 <tr class="spaceRows">
                     <td>
-                        <img src="images/me.png" alt="Multilevel evaluation" style="height:316.5px; width:500px;">
+                        <a class="fancybox" caption="Multilevel evaluation" rel="group" href="images/me.png">
+                            <img src="images/me.png" alt="Multilevel evaluation" style="height:316.5px; width:500px;">
+                        </a>
                     </td>
                     <td>
                         <h1 style="font-size: 150%; padding-left: 50px; padding-right: 50px;">Multilevel evaluation</h1>
@@ -121,7 +145,9 @@
             
                 <tr class="spaceRows">
                     <td>
-                        <img src="images/na.png" alt="Near analysis" style="height:316.5px; width:500px;">
+                        <a class="fancybox" caption="Near Analysis" rel="group" href="images/na.png">
+                            <img src="images/na.png" alt="Near analysis" style="height:316.5px; width:500px;">
+                        </a>
                     </td>
                     <td>
                         <h1 style="font-size: 150%; padding-left: 50px; padding-right: 50px;">Near analysis</h1>
@@ -132,7 +158,9 @@
             
                 <tr class="spaceRows">
                     <td>
-                        <img src="images/drab.png" alt="Dynamic risk assessment and benchmarking" style="height:316.5px; width:500px;">
+                        <a class="fancybox" caption="Dynamic risk assessment and benchmarking" rel="group" href="images/drab.png">
+                            <img src="images/drab.png" alt="Dynamic risk assessment and benchmarking" style="height:316.5px; width:500px;">
+                        </a>
                     </td>
                     <td>
                         <h1 style="font-size: 150%; padding-left: 50px; padding-right: 50px;">Dynamic risk assessment and benchmarking</h1>
@@ -632,14 +660,31 @@
     </div>
 	
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <!-- this version is too old for fancybox -->
+    <!-- grabbed most recent version in the head -->
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script>
+   <!-- <script type="text/javascript">
+    //<![CDATA[
+    jQuery(document).ready(function($){
+        $(".fancybox").on("click", function(){
+            $.fancybox({
+              href: this.href,
+              type: $(this).data("type")
+            }); // fancybox
+            return false   
+        }); // on
+    }); // ready
+    //]]>
+    </script> -->
+
+   <script>
 
         //Simple jQuery that changes contact us drop down text
         $(document).ready(function(){
+            // $(".fancybox").fancybox();
             $("#op1").click(function() {
                 $("#contactButton").text('Science Question');
             })
@@ -663,6 +708,13 @@
                 $("term").show();
 
             })
+            $(".fancybox")
+                .attr('rel', 'gallery')
+                .fancybox({
+                    beforeLoad: function() {
+                        this.title = $(this.element).attr('caption');
+                    }
+                });
         });
 	</script>
   </body>
