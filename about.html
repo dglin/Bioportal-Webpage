@@ -215,36 +215,36 @@
 
             ">×</a>
         <div id="signupcontents" class="container-popup">
-            <form class="form-horizontal" role="form">
+            <form class="form-horizontal" role="form" action="http://dummy.com" method="post">
                 <h2 style = "text-align:center;">Registration Form</h2>
                 <div class="form-group">
                     <label for="email" class="col-sm-3 control-label">Email</label>
                     <div class="col-sm-9">
-                        <input type="email" id="email" placeholder="Required" class="form-control">
+                        <input type="email" id="email" name="email" placeholder="Required" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="password" class="col-sm-3 control-label">Password</label>
                     <div class="col-sm-9">
-                        <input type="password" id="password" placeholder="Required. 6-12 characters, must include numbers" class="form-control">
+                        <input type="password" id="password" name="password" placeholder="Required. 6-12 characters, must include numbers" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="Cpassword" class="col-sm-3 control-label">Confirm Password</label>
                     <div class="col-sm-9">
-                        <input type="password" id="Cpassword" placeholder="Required" class="form-control">
+                        <input type="password" id="Cpassword" name="Cpassword" placeholder="Required" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="fname" class="col-sm-3 control-label">First Name</label>
                     <div class="col-sm-9">
-                        <input type="fname" id="fname" class="form-control" placeholder="Required">
+                        <input type="fname" id="fname" name="fname" class="form-control" placeholder="Required">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="lname" class="col-sm-3 control-label">Last Name</label>
                     <div class="col-sm-9">
-                        <input type="lname" id="lname" class="form-control" placeholder="Required">
+                        <input type="lname" id="lname" submit="lname" class="form-control" placeholder="Required">
                     </div>
                 </div>
                 <div class="form-group">
@@ -490,19 +490,19 @@
                 <div class="form-group">
                     <label for="institution" class="col-sm-3 control-label">Institution</label>
                     <div class="col-sm-9">
-                        <input type="institution" id="institution" class="form-control">
+                        <input type="institution" id="institution" name="institution" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="position" class="col-sm-3 control-label">Position</label>
                     <div class="col-sm-9">
-                        <input type="position" id="position" class="form-control">
+                        <input type="position" id="position" name="position" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="phonenumber" class="col-sm-3 control-label">Phone Number</label>
                     <div class="col-sm-9">
-                        <input type="phonenumber" id="phonenumber" class="form-control">
+                        <input type="phonenumber" id="phonenumber" name="phonenumber" class="form-control">
                     </div>
                 </div>
 
@@ -519,12 +519,14 @@
             </br>
                 <div class="form-group">
                     <div class="col-sm-9 col-sm-offset-3">
-                        <a href="javascript:void(0)" onclick = "
+<!--                         <a href="javascript:void(0)" onclick = "
 
                         document.getElementById('signup').style.display='none';
                         document.getElementById('fade').style.display='none'
 
-                        " class="btn btn-primary btn-block" role="button">Sign Up</a>
+                        " class="btn btn-primary btn-block" role="button">Sign Up</a> -->
+
+                        <input type="submit" class="btn btn-primary btn-block" value="Sign Up">
                     </div>
                 </div>
             </form> <!-- /form -->
@@ -576,25 +578,27 @@
     </div>
 
   <div id="login" class="white_content" style="height:350px;">
-        <a class="close" style="text-align:right;" href="javascript:void(0)" onclick = "
+        <a class="close" style="text-align:right;
+
+        " href="javascript:void(0)" onclick = "
 
             document.getElementById('login').style.display='none';
             document.getElementById('fade').style.display='none'
 
             ">×</a>
         <div class="container-popup">
-            <form class="form-horizontal" role="form">
+            <form class="form-horizontal" role="form" action="http://dummy.com" method="post">
                 <h2 style = "text-align:center;">Log In</h2>
                 <div class="form-group">
                     <label for="email" class="col-sm-3 control-label">Username</label>
                     <div class="col-sm-9">
-                        <input type="email" id="email" placeholder="Required" class="form-control">
+                        <input type="email" name="email" id="email" placeholder="Required" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="password" class="col-sm-3 control-label">Password</label>
                     <div class="col-sm-9">
-                        <input type="password" id="password" placeholder="Required" class="form-control">
+                        <input type="password" name="password" id="password" placeholder="Required" class="form-control">
                     </div>
                 </div>
                 <div>
@@ -608,12 +612,13 @@
                 </div>
                 <div class="form-group">
                     <div class="col-sm-9 col-sm-offset-3">
-                        <a href="javascript:void(0)" onclick = "
+                    	<input class="btn btn-primary btn-block" type="submit" value="Log In">
+<!--                         <a href="javascript:void(0)" onclick = "
 
                         document.getElementById('login').style.display='none';
                         document.getElementById('fade').style.display='none'
 
-                        " class="btn btn-primary btn-block" role="button">Log In</a>
+                        " class="btn btn-primary btn-block" role="button">Log In</a> -->
                     </div>
                 </div>
             </form> <!-- /form -->
@@ -627,7 +632,7 @@
 
             ">×</a>
         <div class="container-popup">
-            <form class="form-horizontal" role="form" style="align: left;">
+            <form class="form-horizontal" role="form" style="align: left;" action="http://dummy.com" method="get">
                 <h2 style="text-align:left; padding-left: 0px; left:0px;">Contact</h2>
                 <p>We welcome your feedback and questions<p>
                 <div class="form-group">
@@ -643,19 +648,25 @@
                             <li><a href="#" id="op4">Contact PI</a></li>
                             <li><a href="#" id="op5">Web Training</a></li>
                             <li><a href="#" id="op6">Other</a></li>
+<!--                             <li><input type="radio" name="Option" value="Science Question"></li>
+                            <li><input type="radio" name="Option" value="Technical Question"></li>
+                            <li><input type="radio" name="Option" value="Report A Problem"></li>
+                            <li><input type="radio" name="Option" value="Contact PI"></li>
+                            <li><input type="radio" name="Option" value="Web Training"></li>
+                            <li><input type="radio" name="Option" value="Other"></li> -->
                         </ul>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="email" class="col-sm-3 control-label">Subject</label>
                     <div class="col-sm-9">
-                        <input type="text" id="cSubject" placeholder="Required" class="form-control">
+                        <input type="text" id="cSubject" name="cSubject" placeholder="Required" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="password" class="col-sm-3 control-label">Email</label>
                     <div class="col-sm-9">
-                        <input type="email" id="cEmail" placeholder="Required" class="form-control">
+                        <input type="email" id="cEmail" name="cEmail"placeholder="Required" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
@@ -663,12 +674,7 @@
                 </div>
                 <div class="form-group">
                     <div>
-                        <a href="javascript:void(0)" onclick = "
-
-                        document.getElementById('contact').style.display='none';
-                        document.getElementById('fade').style.display='none'
-
-                        " class="btn btn-primary btn-block" role="button">Send</a>
+                        <input type="submit" class="btn btn-primary btn-block" role="button" value="Send">
                     </div>
                 </div>
             </form> <!-- /form -->
